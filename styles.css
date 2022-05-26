@@ -96,3 +96,20 @@ headline {
     left: 323px;
     top: 134.24px;
 }
+.rectangle-7 {
+    position: absolute;
+    width: 26.46px;
+    height: 4.73px;
+    left: 127.18px;
+    top: 107.59px;
+    background: #6070FF;
+    transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
+}
+.ellipse-5 {
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    left: 132.98px;
+    top: 111.81px;
+    transform: rotate(52.97deg);
+}
