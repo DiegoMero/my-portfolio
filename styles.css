@@ -51,3 +51,23 @@ body {
     padding: 10px 12px;
     width: 100px;
 }
+headline {
+    
+}
+
+.rectangle-6 {
+    /* Rectangle 6 */
+
+
+    position: absolute;
+    width: 51.99px;
+    height: 9.3px;
+    left: -34px;
+    top: 141.49px;
+
+/* Primary/B50 */
+
+    background: #EBEBFF;
+    transform: rotate(-46.14deg)
+
+}
