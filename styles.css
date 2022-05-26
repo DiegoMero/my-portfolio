@@ -1,3 +1,14 @@
+.container {
+    display: flex;
+    position: absolute;
+    width: 375px;
+    height: 718px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    justify-content: flex-start;
+}
 header {
     position: absolute;
     left: 0px;
@@ -6,6 +17,7 @@ header {
     height: 48px;
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 .my-logo {
     width: 76px;
@@ -38,12 +50,6 @@ button {
     border-radius: 2px;
     width: 16px;
 }
-body {
-    width: 375px;
-    height: 718px;
-    left: 0px;
-    top: 0px;
-}
 .logo-placeholder {
     display: flex;
     flex-direction: row;
@@ -52,9 +58,17 @@ body {
     width: 100px;
 }
 headline {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 114px 24px;
+    gap: 12px;
+    width: 375px;
+    height: 604px;
+    left: calc(50% - 375px/2);
+    top: 92px;
+    border: 1px solid black;
 }
-
 .rectangle-6 {
     position: absolute;
     width: 51.99px;
@@ -112,4 +126,53 @@ headline {
     left: 132.98px;
     top: 111.81px;
     transform: rotate(52.97deg);
+}
+
+.primary-text {
+    width: 327px;
+    height: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172B4D;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top:75px;
+}
+.secondary-text {
+    width: 327px;
+    height: 146px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.supportive-text {
+    width: 117px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.twitter-icon {
+    position: absolute;
+left: 6.4%;
+right: 88.27%;
+top: 77.81%;
+bottom: 18.88%;
 }
