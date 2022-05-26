@@ -56,18 +56,43 @@ headline {
 }
 
 .rectangle-6 {
-    /* Rectangle 6 */
-
-
     position: absolute;
     width: 51.99px;
     height: 9.3px;
     left: -34px;
-    top: 141.49px;
-
-/* Primary/B50 */
-
+    top: 97.49px;
     background: #EBEBFF;
     transform: rotate(-46.14deg)
-
+}
+.ellipse-11 {
+    position: absolute;
+    width: 38.5px;
+    height: 19.25px;
+    left: -16.04px;
+    top: 117.47px;
+    background: #6070FF;
+    transform: rotate(-156.88deg);
+}
+.ellipse-8 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 214px;
+    top: 66px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+.rectangle-4 {
+    position: absolute;
+    width: 95.58px;
+    height: 22.02px;
+    left: 294px;
+    top: 121.79px;
+    background: #EBEBFF;
+    transform: rotate(-30deg);
+}
+.ellipse-3 {
+    position: absolute;
+    left: 323px;
+    top: 134.24px;
 }
