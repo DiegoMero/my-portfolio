@@ -257,3 +257,9 @@ button {
   left: 332.18px;
   top: 496.44px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
