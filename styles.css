@@ -6,7 +6,6 @@
     left: 0px;
     top: 0px;
     background: #FFFFFF;
-    border: 1px solid black;
     justify-content: flex-start;
 }
 header {
@@ -17,7 +16,6 @@ header {
     height: 48px;
     display: flex;
     align-items: center;
-    border: 1px solid black;
 }
 .my-logo {
     width: 76px;
@@ -67,8 +65,6 @@ headline {
     height: 604px;
     left: calc(50% - 375px/2);
     top: 92px;
-    border: 1px solid black;
-    
 }
 .rectangle-6 {
     position: absolute;
@@ -207,4 +203,40 @@ headline {
     right: 48.22%;
     top: 77.81%;
     bottom: 18.87%;
+}
+.ellipse-15 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 53px;
+    top: 601px;
+}
+.rectangle-5 {
+    position: absolute;
+    width: 68.06px;
+    height: 45.18px;
+    left: 191.82px;
+    top: 609px;
+}
+.ellipse-4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 237px;
+    top: 613.1px;
+}
+.ellipse-12 {
+    position: absolute;
+    width: 24.14px;
+    height: 12.07px;
+    left: 341.76px;
+    top: 486.69px;
+}
+.ellipse-13 {
+    position: absolute;
+    width: 30.1px;
+    height: 30.1px;
+    left: 332.18px;
+    top: 496.44px;
 }
