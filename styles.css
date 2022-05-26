@@ -68,6 +68,7 @@ headline {
     left: calc(50% - 375px/2);
     top: 92px;
     border: 1px solid black;
+    
 }
 .rectangle-6 {
     position: absolute;
@@ -157,7 +158,7 @@ headline {
     flex-grow: 0;
 }
 .supportive-text {
-    width: 117px;
+    width: 140px;
     height: 24px;
     font-family: 'Poppins';
     font-style: normal;
@@ -168,11 +169,42 @@ headline {
     flex: none;
     order: 0;
     flex-grow: 0;
+    position: absolute;
+    margin-top:380px;
+
 }
 .twitter-icon {
     position: absolute;
-left: 6.4%;
-right: 88.27%;
-top: 77.81%;
-bottom: 18.88%;
+    left: 6.4%;
+    right: 88.27%;
+    top: 77.81%;
+    bottom: 18.88%;
+}
+.linkedin-icon {
+    position: absolute;
+    left: 16.4%;
+    right: 78.27%;
+    top: 77.81%;
+    bottom: 18.88%;
+}
+.multitrabajos-icon{
+    position: absolute;
+    left: 27.47%;
+    right: 67.2%;
+    top: 78.15%;
+    bottom: 19.21%;
+}
+.github-icon {
+    position: absolute;
+    left: 38.13%;
+    right: 57.07%;
+    top: 77.81%;
+    bottom: 18.87%;
+}
+.two-fingers-icon {
+    position: absolute;
+    left: 48%;
+    right: 48.22%;
+    top: 77.81%;
+    bottom: 18.87%;
 }
