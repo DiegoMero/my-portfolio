@@ -1,242 +1,262 @@
 .container {
-    display: flex;
-    position: absolute;
-    width: 375px;
-    height: 718px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    justify-content: flex-start;
+  display: flex;
+  position: absolute;
+  width: 375px;
+  height: 718px;
+  background: #fff;
+  justify-content: flex-start;
 }
+
 header {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    width: 375px;
-    height: 48px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  width: 375px;
+  height: 48px;
+  display: flex;
+  align-items: center;
 }
+
 .my-logo {
-    width: 76px;
-    height: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070FF;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  width: 76px;
+  height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
+
 .menu {
-    height: 15px;
-    width: 15px;
-    left: 311px;
-    top: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 24px;
-    margin-left: auto;
+  height: 15px;
+  width: 15px;
+  left: 311px;
+  top: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 24px;
+  margin-left: auto;
 }
+
 button {
-    background-color: #6070FF;
-    border: white;
-    border-radius: 2px;
-    width: 16px;
+  background-color: #6070ff;
+  border: white;
+  border-radius: 2px;
+  width: 16px;
 }
+
 .logo-placeholder {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 12px;
-    width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 100px;
 }
-headline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 114px 24px;
-    gap: 12px;
-    width: 375px;
-    height: 604px;
-    left: calc(50% - 375px/2);
-    top: 92px;
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
+  width: 375px;
+  height: 604px;
+  left: calc(50% - 375px / 2);
+  top: 92px;
 }
+
 .rectangle-6 {
-    position: absolute;
-    width: 51.99px;
-    height: 9.3px;
-    left: -34px;
-    top: 97.49px;
-    background: #EBEBFF;
-    transform: rotate(-46.14deg)
+  position: absolute;
+  width: 51.99px;
+  height: 9.3px;
+  left: -34px;
+  top: 97.49px;
+  background: #ebebff;
+  transform: rotate(-46.14deg);
 }
+
 .ellipse-11 {
-    position: absolute;
-    width: 38.5px;
-    height: 19.25px;
-    left: -16.04px;
-    top: 117.47px;
-    background: #6070FF;
-    transform: rotate(-156.88deg);
+  position: absolute;
+  width: 38.5px;
+  height: 19.25px;
+  left: -16.04px;
+  top: 117.47px;
+  background: #6070ff;
+  transform: rotate(-156.88deg);
 }
+
 .ellipse-8 {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 214px;
-    top: 66px;
-    background: #FFFFFF;
-    box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 214px;
+  top: 66px;
+  background: #fff;
+  box-sizing: border-box;
 }
+
 .rectangle-4 {
-    position: absolute;
-    width: 95.58px;
-    height: 22.02px;
-    left: 294px;
-    top: 121.79px;
-    background: #EBEBFF;
-    transform: rotate(-30deg);
+  position: absolute;
+  width: 95.58px;
+  height: 22.02px;
+  left: 294px;
+  top: 121.79px;
+  background: #ebebff;
+  transform: rotate(-30deg);
 }
+
 .ellipse-3 {
-    position: absolute;
-    left: 323px;
-    top: 134.24px;
+  position: absolute;
+  left: 323px;
+  top: 134.24px;
 }
+
 .rectangle-7 {
-    position: absolute;
-    width: 26.46px;
-    height: 4.73px;
-    left: 127.18px;
-    top: 107.59px;
-    background: #6070FF;
-    transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
+  position: absolute;
+  width: 26.46px;
+  height: 4.73px;
+  left: 127.18px;
+  top: 107.59px;
+  background: #6070ff;
+  transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
 }
+
 .ellipse-5 {
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    left: 132.98px;
-    top: 111.81px;
-    transform: rotate(52.97deg);
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  left: 132.98px;
+  top: 111.81px;
+  transform: rotate(52.97deg);
 }
 
 .primary-text {
-    width: 327px;
-    height: 150px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #172B4D;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-top:75px;
+  width: 327px;
+  height: 150px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 75px;
 }
-.secondary-text {
-    width: 327px;
-    height: 146px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #344563;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-.supportive-text {
-    width: 140px;
-    height: 24px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    position: absolute;
-    margin-top:380px;
 
+.secondary-text {
+  width: 327px;
+  height: 146px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
+
+.supportive-text {
+  width: 140px;
+  height: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: absolute;
+  margin-top: 380px;
+}
+
 .twitter-icon {
-    position: absolute;
-    left: 6.4%;
-    right: 88.27%;
-    top: 77.81%;
-    bottom: 18.88%;
+  position: absolute;
+  left: 6.4%;
+  right: 88.27%;
+  top: 77.81%;
+  bottom: 18.88%;
 }
+
 .linkedin-icon {
-    position: absolute;
-    left: 16.4%;
-    right: 78.27%;
-    top: 77.81%;
-    bottom: 18.88%;
+  position: absolute;
+  left: 16.4%;
+  right: 78.27%;
+  top: 77.81%;
+  bottom: 18.88%;
 }
-.multitrabajos-icon{
-    position: absolute;
-    left: 27.47%;
-    right: 67.2%;
-    top: 78.15%;
-    bottom: 19.21%;
+
+.multitrabajos-icon {
+  position: absolute;
+  left: 27.47%;
+  right: 67.2%;
+  top: 78.15%;
+  bottom: 19.21%;
 }
+
 .github-icon {
-    position: absolute;
-    left: 38.13%;
-    right: 57.07%;
-    top: 77.81%;
-    bottom: 18.87%;
+  position: absolute;
+  left: 38.13%;
+  right: 57.07%;
+  top: 77.81%;
+  bottom: 18.87%;
 }
+
 .two-fingers-icon {
-    position: absolute;
-    left: 48%;
-    right: 48.22%;
-    top: 77.81%;
-    bottom: 18.87%;
+  position: absolute;
+  left: 48%;
+  right: 48.22%;
+  top: 77.81%;
+  bottom: 18.87%;
 }
+
 .ellipse-15 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 53px;
-    top: 601px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 53px;
+  top: 601px;
 }
+
 .rectangle-5 {
-    position: absolute;
-    width: 68.06px;
-    height: 45.18px;
-    left: 191.82px;
-    top: 609px;
+  position: absolute;
+  width: 68.06px;
+  height: 45.18px;
+  left: 191.82px;
+  top: 609px;
 }
+
 .ellipse-4 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 237px;
-    top: 613.1px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 237px;
+  top: 613.1px;
 }
+
 .ellipse-12 {
-    position: absolute;
-    width: 24.14px;
-    height: 12.07px;
-    left: 341.76px;
-    top: 486.69px;
+  position: absolute;
+  width: 24.14px;
+  height: 12.07px;
+  left: 341.76px;
+  top: 486.69px;
 }
+
 .ellipse-13 {
-    position: absolute;
-    width: 30.1px;
-    height: 30.1px;
-    left: 332.18px;
-    top: 496.44px;
+  position: absolute;
+  width: 30.1px;
+  height: 30.1px;
+  left: 332.18px;
+  top: 496.44px;
 }
