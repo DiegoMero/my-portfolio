@@ -60,7 +60,6 @@ button {
 .headline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
   width: 375px;
@@ -174,10 +173,8 @@ button {
   line-height: 24px;
   color: #7f8cff;
   flex: none;
-  order: 0;
+  order: 3;
   flex-grow: 0;
-  position: absolute;
-  margin-top: 380px;
 }
 
 .twitter-icon {
