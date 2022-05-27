@@ -269,6 +269,7 @@ ul {
 
 .works {
   display: grid;
+  row-gap: 50px;
   grid-row-start: 1;
   grid-row-end: 5;
   height: 2788px;
