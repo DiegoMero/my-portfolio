@@ -3,7 +3,6 @@ body {
   position: absolute;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 375px;
   height: 718px;
   background: #fff;
@@ -71,6 +70,50 @@ header {
   top: 92px;
 }
 
+.primary-text {
+  width: 327px;
+  height: 150px;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.secondary-text {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.supportive-text {
+  width: 140px;
+  height: 24px;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
 .rectangle-6 {
   position: absolute;
   width: 51.99px;
@@ -136,48 +179,11 @@ header {
   transform: rotate(52.97deg);
 }
 
-.primary-text {
-  width: 327px;
-  height: 150px;
-  font-family: 'Poppins',sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+.social-media-images {
   display: flex;
-  align-items: center;
-  color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-top: 75px;
-}
-
-.secondary-text {
-  width: 327px;
-  height: 146px;
-  font-family: 'Poppins',sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.supportive-text {
-  width: 140px;
-  height: 24px;
-  font-family: 'Poppins',sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+  padding: 0;
+  margin:0;
+  
 }
 
 .twitter-icon {
@@ -395,6 +401,8 @@ ul {
 .project-button-container {
   width: 295px;
   height: 72px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .action-button {
@@ -501,5 +509,9 @@ ul {
   width: 29px;
   height: 16px;
   color: #7A869A;
+}
+
+.icons {
+  display: flex;
 }
 
