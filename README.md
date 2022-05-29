@@ -1,14 +1,16 @@
 my-portfolio:
-  This is my personal porftolio, I can present myself with it
+  This is my personal porftolio, I can present myself with it.
 Built With:
   HTML
   CSS
   Visual Studio Code
   Figma
 Prerequisites:
-  You will only need a working pc
+  You will only need a working pc.
+Setup:
+  Feel free to fork the repo!
 Usage:
-  It is for present myself as a software development
+  It is for present myself as a software development.
 Authors:
 👤 Diego Mero
   GitHub: https://github.com/DiegoMero
@@ -20,6 +22,6 @@ Authors:
 Show your support:
   Give a ⭐️ if you like this project!
 Acknowledgments:
-  Basic html and css basics
+  Basic html and css basics.
 📝 License:
   This project is MIT licensed.
