@@ -881,3 +881,46 @@ ul {
   margin-left: 215px;
 }
 
+.contact-me-container {
+  width: 375px;
+  height: 779px;
+  left: 0px;
+  top: 4350px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-title {
+  width: 801px;
+  height: 56px;
+  left: -213px;
+  top: 4734px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+
+.contact-me-description {
+  display: flex;
+  width: 327px;
+  height: 102px;
+  left: 24px;
+  top: 4802px;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+}
