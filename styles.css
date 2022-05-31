@@ -882,6 +882,7 @@ ul {
 }
 
 .contact-me-container {
+  background-image: url(images/contact-me.png);
   width: 375px;
   height: 779px;
   left: 0;
