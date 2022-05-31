@@ -911,6 +911,15 @@ ul {
   margin-top: 100px;
 }
 
+.shape {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 8px;
+  border-radius: 10px;
+}
+
 .contact-me-description {
   display: flex;
   width: 327px;
