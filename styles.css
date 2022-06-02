@@ -1401,4 +1401,40 @@ ul {
       top: 24px;
     }
     
+    .about-me-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 1440px;
+      height: 924px;
+      left: 1440px;
+      top: 4535px;
+      padding: 199px;
+    }
+
+    .first-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 400px;
+      height: 392px;;
+      top: 3753px;
+      margin-right: 150px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 500px;
+      height: 360px;
+      left: 614px;
+      top: 3753px;
+    }
+
+    .contact-me-container {
+      
+    }
+
 }
