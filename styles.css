@@ -9,7 +9,7 @@ body {
   justify-content: flex-start;
 }
 
-header {
+.navbar {
   position: absolute;
   width: 375px;
   height: 48px;
@@ -49,8 +49,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 10px 52px;
+  position: absolute;
   width: 100px;
+  height: 40px;
 }
 
 .headline {
@@ -118,12 +120,8 @@ header {
 
 .ellipse-11 {
   position: absolute;
-  width: 38.5px;
-  height: 19.25px;
-  left: -16.04px;
-  top: 117.47px;
-  background: #6070ff;
-  transform: rotate(-156.88deg);
+  left: -60px;
+  top: 100.47px;
 }
 
 .ellipse-8 {
@@ -832,8 +830,7 @@ ul {
   width: 375px;
   height: 779px;
   left: 0;
-  top: 4350px;
-  position: absolute;
+  top: 4500px;
   display: flex;
   flex-direction: column;
 }
@@ -857,14 +854,6 @@ ul {
   margin-top: 100px;
 }
 
-.shape {
-  position: absolute;
-  width: 134px;
-  height: 5px;
-  left: calc(50% - 134px / 2 - 0.5px);
-  bottom: 8px;
-  border-radius: 10px;
-}
 
 .contact-me-description {
   display: flex;
@@ -1000,7 +989,7 @@ ul {
   width: 21px;
   height: 21px;
   left: 153px;
-  top: 50px;
+  top: 4506px;
 }
 
 .rectangle-8 {
@@ -1008,27 +997,110 @@ ul {
   width: 74.7px;
   height: 17.21px;
   left: 310px;
-  top: 25px;
-  background: #7f8cff;
+  top: 4481.4px;
+  background: #7F8CFF;
   transform: rotate(-23.18deg);
 }
 
 .ellipse-17 {
   position: absolute;
   left: 328px;
-  top: 35px;
+  top: 4490.75px;
 }
 
 .ellipse-18 {
   position: absolute;
   width: 31.11px;
   height: 31.11px;
-  left: 250px;
-  top: 700px;
+  left: 276.74px;
+  top: 5145.27px;
 }
 
 .rectangle-9 {
   position: absolute;
   left: 258.8px;
-  top: 680px;
+  top: 5105.89px;
+}
+
+/*@media only screen and (min-width: 768px) {
+    body {
+      width: 100%;
+      background-color: #000;
+    }
+
+    header {
+      background-image: url(images/header-background-shape-desktop.png);
+      width: 100%;
+      height: px;
+      left: 0px;
+      top: 71px;
+    }
+
+    .headline {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar {
+      position: absolute;
+      width: 1440px;
+      height: 72px;
+      left: 0px;
+      top: 0px;
+    }
+
+    .my-logo {
+      width: 76px;
+      height: 20px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #6070FF;
+
+    }
+    .menu {
+      display: none;
+    }
+
+    .primary-text {
+      width: 920px;
+      height: 122px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.37px;
+      color: #091E42;
+    }
+
+    .secondary-text {
+      width: 920px;
+      height: 98px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #344563;
+    }
+
+    .supportive-text{
+      width: 117px;
+      height: 24px;
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #7F8CFF;
+    }
 }
