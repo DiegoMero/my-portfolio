@@ -1,6 +1,5 @@
 body {
   display: flex;
-  position: absolute;
   flex-direction: column;
   align-items: center;
   width: 375px;
@@ -17,6 +16,10 @@ body {
   align-items: center;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .my-logo {
   width: 76px;
   height: 20px;
@@ -29,6 +32,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  text-decoration: none;
 }
 
 .menu {
@@ -1022,18 +1026,24 @@ ul {
   top: 5105.89px;
 }
 
-/*@media only screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .background-images-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
     body {
       width: 100%;
-      background-color: #000;
+      background: #E5E5E5;  
     }
 
     header {
       background-image: url(images/header-background-shape-desktop.png);
       width: 100%;
-      height: px;
+      height:916px;
       left: 0px;
-      top: 71px;
+      top: 1px;
     }
 
     .headline {
@@ -1041,20 +1051,33 @@ ul {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 150px 0;
     }
 
     .navbar {
-      position: absolute;
-      width: 1440px;
+      position: fixed;
+      width: 100%;
       height: 72px;
       left: 0px;
       top: 0px;
     }
 
+    .logo-placeholder {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 12px;
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      left: 143px;
+      top: calc(50% - 40px/2);
+    }
+
     .my-logo {
       width: 76px;
       height: 20px;
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -1063,8 +1086,9 @@ ul {
       align-items: center;
       text-align: center;
       color: #6070FF;
-
+      text-decoration: none;
     }
+
     .menu {
       display: none;
     }
@@ -1102,5 +1126,145 @@ ul {
       font-size: 16px;
       line-height: 24px;
       color: #7F8CFF;
+      margin-right: 800px;
+    }
+
+    .icons {
+      margin-right: 720px;
+    }
+
+    .background-images {
+      display: none;
+    }
+
+    .ellipse-11desktop {
+      position: absolute;
+      left: 80.2px;
+      top: 225.68px;
+    }
+
+    .ellipse-4desktop {
+      position: absolute;
+      width: 47px;
+      height: 47px;
+      left: 839px;
+      top: 758px;
+    }
+
+    .rectangle-7desktop {
+      position: absolute;
+      left: 693.25px;
+      top: 238.57px;
+    }
+
+    .ellipse-5desktop {
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      left: 708px;
+      top: 257px;
+    }
+
+    .rectangle-6desktop {
+      position: absolute;
+      left: 34.6px;
+      top: 168.92px;
+    }
+
+    .rectangle-4desktop {
+      position: absolute;
+      left: 1146px;
+      top: 141px;
+    }
+
+    .ellipse-3desktop {
+      position: absolute;
+      left: 1208px;
+      top: 212px;
+    }
+
+    .rectangle-5desktop {
+      position: absolute;
+      left: 731.44px;
+      top: 755px;
+    }
+
+    .ellipse-8desktop {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 379px;
+      top: 185px;
+    }
+
+    .ellipse-12desktop {
+      position: absolute;
+      width: 36.9px;
+      height: 18.45px;
+      left: 290.7px;
+      top: 764.93px;
+    }
+
+    .ellipse-13desktop {
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      left: 276.06px;
+      top: 780.37px;
+    }
+
+    .desktop-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 8px;
+      position: absolute;
+      width: 259px;
+      height: 40px;
+      left: 1039px;
+      top: 16px;
+    }
+
+    .portfolio {
+      width: 63px;
+      height: 20px;
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #344563;
+    }
+
+    .about {
+      width: 46px;
+      height: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #344563;
+    }
+
+    .contact {
+      width: 62px;
+      height: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #344563;
     }
 }
