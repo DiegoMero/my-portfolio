@@ -886,7 +886,6 @@ ul {
   margin-top: 100px;
 }
 
-
 .contact-me-description {
   display: flex;
   width: 327px;
@@ -1016,44 +1015,6 @@ ul {
   border: 1px solid #c1c7d0;
 }
 
-.ellipse-16 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 153px;
-  top: 4506px;
-}
-
-.rectangle-8 {
-  position: absolute;
-  width: 74.7px;
-  height: 17.21px;
-  left: 310px;
-  top: 4481.4px;
-  background: #7f8cff;
-  transform: rotate(-23.18deg);
-}
-
-.ellipse-17 {
-  position: absolute;
-  left: 328px;
-  top: 4490.75px;
-}
-
-.ellipse-18 {
-  position: absolute;
-  width: 31.11px;
-  height: 31.11px;
-  left: 276.74px;
-  top: 5145.27px;
-}
-
-.rectangle-9 {
-  position: absolute;
-  left: 258.8px;
-  top: 5105.89px;
-}
-
 @media screen and (max-width: 768px) {
   .background-images-desktop {
     display: none;
@@ -1062,20 +1023,20 @@ ul {
 
 @media only screen and (min-width: 768px) {
     body {
-      width: 100%;
+      width: 1440px;
       background: #e5e5e5;  
     }
 
     header {
       background-image: url(images/header-background-shape-desktop.png);
-      width: 100%;
+      width: 1440px;
       height: 916px;
       left: 0;
       top: 1px;
     }
 
     .headline {
-      width: 100%;
+      width: 1440px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1084,7 +1045,7 @@ ul {
 
     .navbar {
       position: fixed;
-      width: 100%;
+      width: 1440px;
       height: 72px;
       left: 0;
       top: 0;
@@ -1297,12 +1258,12 @@ ul {
     }
 
     .works {
+      width: 1440px;
       display: grid;
       padding: 142px;
       gap: 142px;
-      width: 100%;
       height: 2694px;
-      left: 0px;
+      left: 0;
       top: 917px;
     }
 
@@ -1434,7 +1395,126 @@ ul {
     }
 
     .contact-me-container {
-      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      background-image: url(images/contact-form-background.png);
+      width: 1440px;
+      height: 846px;
+      left: 0px;
+      top: 5125px;
+      padding-bottom: 100px;
+      background-repeat: no-repeat;
+      padding-right: 0;
     }
 
+    .contact-me-title {
+      display: flex;
+      width: 801px;
+      height: 56px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 52px;
+      display: flex;
+      color: #fff;
+      justify-content: center;
+      margin-right: 50px;
+    }
+
+    .contact-me-description {
+      width: 569px;
+      height: 102px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #EBEBFF;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 27px;
+      width: 447px;
+      height: 395px;
+    }
+
+    #name {
+      width: 447px;
+      height: 48px;
+      border-radius: 0;
+    }
+
+    #mail {
+      width: 447px;
+      height: 48px;
+      border-radius: 0;
+    }
+
+    #msg {
+      width: 447px;
+      height: 170px;
+      border-radius: 0;
+    }
+
+    .ellipse-5desktop2 {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      left: 111.53px;
+      top: 5000.17px;
+    }
+
+    .rectangle-7desktop2 {
+      position: absolute;
+      left: 100.86px;
+      top: 4949.61px;
+    }
+
+    .rectangle-6desktop2 {
+      position: absolute;
+      left: 337px;
+      top: 5342.35px;
+    }
+
+    .ellipse-11desktop2 {
+      position: absolute;
+      left: 365.92px;
+      top: 5360.79px;
+    }
+
+    .ellipse-12desktop2 {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      left: 470px;
+      top: 4593px;
+    }
+
+    .rectangle-4desktop2 {
+      position: absolute;
+      left: 1211.59px;
+      top: 4650.28px;
+    }
+
+    .ellipse-3desktop2 {
+      position: absolute;
+      left: 1237px;
+      top: 4687px;
+    }
+
+    .ellipse-13desktop2 {
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      left: 1129px;
+      top: 5150px;
+    }
 }
