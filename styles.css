@@ -1022,499 +1022,576 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-      width: 1440px;
-      background: #e5e5e5;  
-    }
+  body {
+    width: 1440px;
+    background: #e5e5e5;
+  }
 
-    header {
-      background-image: url(images/header-background-shape-desktop.png);
-      width: 1440px;
-      height: 916px;
-      left: 0;
-      top: 1px;
-    }
+  header {
+    background-image: url(images/header-background-shape-desktop.png);
+    width: 1440px;
+    height: 916px;
+    left: 0;
+    top: 1px;
+  }
 
-    .headline {
-      width: 1440px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 150px 0;
-    }
+  .headline {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+  }
 
-    .navbar {
-      position: fixed;
-      width: 1440px;
-      height: 72px;
-      left: 0;
-      top: 0;
-    }
+  .navbar {
+    position: fixed;
+    width: 1440px;
+    height: 72px;
+    left: 0;
+    top: 0;
+  }
 
-    .logo-placeholder {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 10px 12px;
-      position: absolute;
-      width: 100px;
-      height: 40px;
-      left: 143px;
-      top: calc(50% - 40px / 2);
-    }
+  .logo-placeholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 143px;
+    top: calc(50% - 40px / 2);
+  }
 
-    .my-logo {
-      width: 76px;
-      height: 20px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #6070ff;
-      text-decoration: none;
-    }
+  .my-logo {
+    width: 76px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+    text-decoration: none;
+  }
 
-    .menu {
-      display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    .primary-text {
-      width: 920px;
-      height: 122px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 60px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.37px;
-      color: #091e42;
-    }
+  .primary-text {
+    width: 920px;
+    height: 122px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
 
-    .secondary-text {
-      width: 920px;
-      height: 98px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28px;
-      color: #344563;
-    }
+  .secondary-text {
+    width: 920px;
+    height: 98px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
 
-    .supportive-text{
-      width: 117px;
-      height: 24px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #7f8cff;
-      margin-right: 800px;
-    }
+  .supportive-text {
+    width: 117px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    margin-right: 800px;
+  }
 
-    .icons {
-      margin-right: 720px;
-    }
+  .icons {
+    margin-right: 720px;
+  }
 
-    .background-images {
-      display: none;
-    }
+  .background-images {
+    display: none;
+  }
 
-    .ellipse-11desktop {
-      position: absolute;
-      left: 80.2px;
-      top: 225.68px;
-    }
+  .ellipse-11desktop {
+    position: absolute;
+    left: 80.2px;
+    top: 225.68px;
+  }
 
-    .ellipse-4desktop {
-      position: absolute;
-      width: 47px;
-      height: 47px;
-      left: 839px;
-      top: 758px;
-    }
+  .ellipse-4desktop {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 839px;
+    top: 758px;
+  }
 
-    .rectangle-7desktop {
-      position: absolute;
-      left: 693.25px;
-      top: 238.57px;
-    }
+  .rectangle-7desktop {
+    position: absolute;
+    left: 693.25px;
+    top: 238.57px;
+  }
 
-    .ellipse-5desktop {
-      position: absolute;
-      width: 23px;
-      height: 23px;
-      left: 708px;
-      top: 257px;
-    }
+  .ellipse-5desktop {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 708px;
+    top: 257px;
+  }
 
-    .rectangle-6desktop {
-      position: absolute;
-      left: 34.6px;
-      top: 168.92px;
-    }
+  .rectangle-6desktop {
+    position: absolute;
+    left: 34.6px;
+    top: 168.92px;
+  }
 
-    .rectangle-4desktop {
-      position: absolute;
-      left: 1146px;
-      top: 141px;
-    }
+  .rectangle-4desktop {
+    position: absolute;
+    left: 1146px;
+    top: 141px;
+  }
 
-    .ellipse-3desktop {
-      position: absolute;
-      left: 1208px;
-      top: 212px;
-    }
+  .ellipse-3desktop {
+    position: absolute;
+    left: 1208px;
+    top: 212px;
+  }
 
-    .rectangle-5desktop {
-      position: absolute;
-      left: 731.44px;
-      top: 755px;
-    }
+  .rectangle-5desktop {
+    position: absolute;
+    left: 731.44px;
+    top: 755px;
+  }
 
-    .ellipse-8desktop {
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      left: 379px;
-      top: 185px;
-    }
+  .ellipse-8desktop {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 379px;
+    top: 185px;
+  }
 
-    .ellipse-12desktop {
-      position: absolute;
-      width: 36.9px;
-      height: 18.45px;
-      left: 290.7px;
-      top: 764.93px;
-    }
+  .ellipse-12desktop {
+    position: absolute;
+    width: 36.9px;
+    height: 18.45px;
+    left: 290.7px;
+    top: 764.93px;
+  }
 
-    .ellipse-13desktop {
-      position: absolute;
-      width: 46px;
-      height: 46px;
-      left: 276.06px;
-      top: 780.37px;
-    }
+  .ellipse-13desktop {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 276.06px;
+    top: 780.37px;
+  }
 
-    .desktop-menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0;
-      gap: 8px;
-      position: absolute;
-      width: 259px;
-      height: 40px;
-      left: 1039px;
-      top: 16px;
-    }
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 259px;
+    height: 40px;
+    left: 1039px;
+    top: 16px;
+  }
 
-    .portfolio {
-      width: 63px;
-      height: 20px;
-      font-family: 'Poppins',sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #344563;
-    }
+  .portfolio {
+    width: 63px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
 
-    .about {
-      width: 46px;
-      height: 20px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #344563;
-    }
+  .about {
+    width: 46px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
 
-    .contact {
-      width: 62px;
-      height: 20px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #344563;
-    }
+  .contact {
+    width: 62px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
 
-    .works {
-      width: 1440px;
-      display: grid;
-      padding: 142px;
-      gap: 142px;
-      height: 2694px;
-      left: 0;
-      top: 917px;
-    }
+  .works {
+    width: 1440px;
+    display: grid;
+    padding: 142px;
+    gap: 142px;
+    height: 2694px;
+    left: 0;
+    top: 917px;
+  }
 
-    .card {
-      width: auto;
-      height: auto;
-      flex-direction: row;
-      align-items: flex-start;
-      width: 1156px;
-      height: 496px;
-    }
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 1156px;
+    height: 496px;
+  }
 
-    .card2 {
-      flex-direction: row-reverse;
-    }
+  .description {
+    width: 496px;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    .card4 {
-      flex-direction: row-reverse;
-    }
+  .card2 {
+    flex-direction: row-reverse;
+  }
 
-    .snapshot-portfolio1 {
-      background: url(images/SnapshootPortfolioDesktop.png);
-      width: 544px;
-      height: 448px;
-      left: 24px;
-      top: 24px;
-    }
+  .card4 {
+    flex-direction: row-reverse;
+  }
 
-    .block1 {
-      display: flex;
-      flex-direction: column;
-      padding: 24px;
-      gap: 24px;
-      width: 544px;
-      height: 445px;
-      left: 590px;
-      top: 24px;
-    }
+  .snapshot-portfolio1 {
+    background: url(images/SnapshootPortfolioDesktop.png);
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+  }
 
-    .snapshot-portfolio2 {
-      background: url(images/SnapshootPortfolioDesktop2.png);
-      width: 544px;
-      height: 448px;
-      left: 590px;
-      top: 24px;
-      margin-left: auto;
-    }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
 
-    .block2 {
-      display: flex;
-      flex-direction: column;
-      padding: 24px;
-      gap: 24px;
-      width: 544px;
-      height: 445px;
-      left: 590px;
-      top: 24px;
-    }
-    
-    .snapshot-portfolio3 {
-      background: url(images/SnapshootPortfolioDesktop3.png);
-      width: 544px;
-      height: 448px;
-      left: 24px;
-      top: 24px;
-    }
+  .snapshot-portfolio2 {
+    background: url(images/SnapshootPortfolioDesktop2.png);
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    margin-left: auto;
+  }
 
-    .snapshot-portfolio4 {
-      background: url(images/SnapshootPortfolioDesktop4.png);
-      width: 544px;
-      height: 448px;
-      left: 590px;
-      top: 24px;
-      margin-left: auto;
-    }
+  .block2 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
 
-    .block3 {
-      display: flex;
-      flex-direction: column;
-      padding: 24px;
-      gap: 24px;
-      width: 544px;
-      height: 445px;
-      left: 590px;
-      top: 24px;
-    }
+  .snapshot-portfolio3 {
+    background: url(images/SnapshootPortfolioDesktop3.png);
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+  }
 
-    .block4 {
-      display: flex;
-      flex-direction: column;
-      padding: 24px;
-      gap: 24px;
-      width: 544px;
-      height: 445px;
-      left: 590px;
-      top: 24px;
-    }
-    
-    .about-me-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 1440px;
-      height: 924px;
-      left: 1440px;
-      top: 4535px;
-      padding: 199px;
-    }
+  .snapshot-portfolio4 {
+    background: url(images/SnapshootPortfolioDesktop4.png);
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    margin-left: auto;
+  }
 
-    .first-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-      width: 400px;
-      height: 392px;;
-      top: 3753px;
-      margin-right: 150px;
-    }
+  .block3 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
 
-    .skill-list {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 500px;
-      height: 360px;
-      left: 614px;
-      top: 3753px;
-    }
+  .block4 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
 
-    .contact-me-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #fff;
-      background-image: url(images/contact-form-background.png);
-      width: 1440px;
-      height: 846px;
-      left: 0px;
-      top: 5125px;
-      padding-bottom: 100px;
-      background-repeat: no-repeat;
-      padding-right: 0;
-    }
+  .down-arrow {
+    margin-left: 400px;
+  }
 
-    .contact-me-title {
-      display: flex;
-      width: 801px;
-      height: 56px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 52px;
-      display: flex;
-      color: #fff;
-      justify-content: center;
-      margin-right: 50px;
-    }
+  .right-arrow {
+    margin-left: 400px;
+  }
 
-    .contact-me-description {
-      width: 569px;
-      height: 102px;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28px;
-      text-align: center;
-      color: #EBEBFF;
-    }
+  .right-arrow2 {
+    margin-left: 475px;
+  }
 
-    .form-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0px;
-      gap: 27px;
-      width: 447px;
-      height: 395px;
-    }
+  .skill-list {
+    margin-right: 250px;
+  }
 
-    #name {
-      width: 447px;
-      height: 48px;
-      border-radius: 0;
-    }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 684px;
+    height: 360px;
+    left: 614px;
+    top: 3753px;
+    margin-left: 90px;
+  }
 
-    #mail {
-      width: 447px;
-      height: 48px;
-      border-radius: 0;
-    }
+  .javascript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
 
-    #msg {
-      width: 447px;
-      height: 170px;
-      border-radius: 0;
-    }
+  .html {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
 
-    .ellipse-5desktop2 {
-      position: absolute;
-      width: 48px;
-      height: 48px;
-      left: 111.53px;
-      top: 5000.17px;
-    }
+  .css {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
 
-    .rectangle-7desktop2 {
-      position: absolute;
-      left: 100.86px;
-      top: 4949.61px;
-    }
+  .languajes-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    width: 414px;
+    height: 144px;
+  }
 
-    .rectangle-6desktop2 {
-      position: absolute;
-      left: 337px;
-      top: 5342.35px;
-    }
+  .about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1440px;
+    height: 924px;
+    left: 1440px;
+    top: 4535px;
+    padding: 150px;
+    margin-left: 100px;
+  }
 
-    .ellipse-11desktop2 {
-      position: absolute;
-      left: 365.92px;
-      top: 5360.79px;
-    }
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 400px;
+    height: 392px;
+    top: 3753px;
+    margin-right: 150px;
+  }
 
-    .ellipse-12desktop2 {
-      position: absolute;
-      width: 27px;
-      height: 27px;
-      left: 470px;
-      top: 4593px;
-    }
+  .description2 {
+    width: 447px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
 
-    .rectangle-4desktop2 {
-      position: absolute;
-      left: 1211.59px;
-      top: 4650.28px;
-    }
+  .contact-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    background-image: url(images/contact-form-background.png);
+    width: 1440px;
+    height: 846px;
+    left: 0;
+    top: 5125px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    padding-right: 0;
+  }
 
-    .ellipse-3desktop2 {
-      position: absolute;
-      left: 1237px;
-      top: 4687px;
-    }
+  .contact-me-title {
+    display: flex;
+    width: 801px;
+    height: 56px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    justify-content: center;
+    margin-right: 50px;
+  }
 
-    .ellipse-13desktop2 {
-      position: absolute;
-      width: 75px;
-      height: 75px;
-      left: 1129px;
-      top: 5150px;
-    }
+  .contact-me-description {
+    width: 569px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 27px;
+    width: 447px;
+    height: 395px;
+  }
+
+  #name {
+    width: 447px;
+    height: 48px;
+    border-radius: 0;
+  }
+
+  #mail {
+    width: 447px;
+    height: 48px;
+    border-radius: 0;
+  }
+
+  #msg {
+    width: 447px;
+    height: 170px;
+    border-radius: 0;
+  }
+
+  .ellipse-5desktop2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 111.53px;
+    top: 5000.17px;
+  }
+
+  .rectangle-7desktop2 {
+    position: absolute;
+    left: 100.86px;
+    top: 4949.61px;
+  }
+
+  .rectangle-6desktop2 {
+    position: absolute;
+    left: 337px;
+    top: 5342.35px;
+  }
+
+  .ellipse-11desktop2 {
+    position: absolute;
+    left: 365.92px;
+    top: 5360.79px;
+  }
+
+  .ellipse-12desktop2 {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 470px;
+    top: 4593px;
+  }
+
+  .rectangle-4desktop2 {
+    position: absolute;
+    left: 1211.59px;
+    top: 4650.28px;
+  }
+
+  .ellipse-3desktop2 {
+    position: absolute;
+    left: 1237px;
+    top: 4687px;
+  }
+
+  .ellipse-13desktop2 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 1129px;
+    top: 5150px;
+  }
 }
