@@ -247,6 +247,34 @@ ul {
   border-radius: 16px;
 }
 
+.snapshot-portfolio1 {
+  background: url(images/SnapshootPortfolio.png);
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.snapshot-portfolio2 {
+  background: url(images/SnapshootPortfolio2.png);
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.snapshot-portfolio3 {
+  background: url(images/SnapshootPortfolio3.png);
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.snapshot-portfolio4 {
+  background: url(images/SnapshootPortfolio4.png);
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
 .project-title {
   display: flex;
   flex-direction: column;
@@ -1002,7 +1030,7 @@ ul {
   height: 17.21px;
   left: 310px;
   top: 4481.4px;
-  background: #7F8CFF;
+  background: #7f8cff;
   transform: rotate(-23.18deg);
 }
 
@@ -1035,14 +1063,14 @@ ul {
 @media only screen and (min-width: 768px) {
     body {
       width: 100%;
-      background: #E5E5E5;  
+      background: #e5e5e5;  
     }
 
     header {
       background-image: url(images/header-background-shape-desktop.png);
       width: 100%;
-      height:916px;
-      left: 0px;
+      height: 916px;
+      left: 0;
       top: 1px;
     }
 
@@ -1058,8 +1086,8 @@ ul {
       position: fixed;
       width: 100%;
       height: 72px;
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
     }
 
     .logo-placeholder {
@@ -1071,7 +1099,7 @@ ul {
       width: 100px;
       height: 40px;
       left: 143px;
-      top: calc(50% - 40px/2);
+      top: calc(50% - 40px / 2);
     }
 
     .my-logo {
@@ -1085,7 +1113,7 @@ ul {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #6070FF;
+      color: #6070ff;
       text-decoration: none;
     }
 
@@ -1104,13 +1132,13 @@ ul {
       display: flex;
       align-items: center;
       letter-spacing: 0.37px;
-      color: #091E42;
+      color: #091e42;
     }
 
     .secondary-text {
       width: 920px;
       height: 98px;
-      font-family: 'Poppins',sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 400;
       font-size: 20px;
       line-height: 28px;
@@ -1120,12 +1148,12 @@ ul {
     .supportive-text{
       width: 117px;
       height: 24px;
-      font-family: 'Poppins',sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
-      color: #7F8CFF;
+      color: #7f8cff;
       margin-right: 800px;
     }
 
@@ -1217,7 +1245,7 @@ ul {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 0px;
+      padding: 0;
       gap: 8px;
       position: absolute;
       width: 259px;
@@ -1267,4 +1295,110 @@ ul {
       text-align: center;
       color: #344563;
     }
+
+    .works {
+      display: grid;
+      padding: 142px;
+      gap: 142px;
+      width: 100%;
+      height: 2694px;
+      left: 0px;
+      top: 917px;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 1156px;
+      height: 496px;
+    }
+
+    .card2 {
+      flex-direction: row-reverse;
+    }
+
+    .card4 {
+      flex-direction: row-reverse;
+    }
+
+    .snapshot-portfolio1 {
+      background: url(images/SnapshootPortfolioDesktop.png);
+      width: 544px;
+      height: 448px;
+      left: 24px;
+      top: 24px;
+    }
+
+    .block1 {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      width: 544px;
+      height: 445px;
+      left: 590px;
+      top: 24px;
+    }
+
+    .snapshot-portfolio2 {
+      background: url(images/SnapshootPortfolioDesktop2.png);
+      width: 544px;
+      height: 448px;
+      left: 590px;
+      top: 24px;
+      margin-left: auto;
+    }
+
+    .block2 {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      width: 544px;
+      height: 445px;
+      left: 590px;
+      top: 24px;
+    }
+    
+    .snapshot-portfolio3 {
+      background: url(images/SnapshootPortfolioDesktop3.png);
+      width: 544px;
+      height: 448px;
+      left: 24px;
+      top: 24px;
+    }
+
+    .snapshot-portfolio4 {
+      background: url(images/SnapshootPortfolioDesktop4.png);
+      width: 544px;
+      height: 448px;
+      left: 590px;
+      top: 24px;
+      margin-left: auto;
+    }
+
+    .block3 {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      width: 544px;
+      height: 445px;
+      left: 590px;
+      top: 24px;
+    }
+
+    .block4 {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      width: 544px;
+      height: 445px;
+      left: 590px;
+      top: 24px;
+    }
+    
 }
