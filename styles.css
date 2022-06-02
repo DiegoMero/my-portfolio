@@ -32,16 +32,8 @@ header {
 }
 
 .menu {
-  height: 15px;
-  width: 15px;
-  left: 311px;
-  top: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-right: 24px;
   margin-left: auto;
+  margin-right: 15px;
 }
 
 .menu-button {
@@ -49,6 +41,9 @@ header {
   border: white;
   border-radius: 2px;
   width: 16px;
+  height: 2px;
+  margin: 3px;
+
 }
 
 .logo-placeholder {
@@ -63,11 +58,12 @@ header {
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
-  gap: 12px;
   width: 375px;
   height: 604px;
   left: calc(50% - 375px / 2);
   top: 92px;
+  align-items: flex-start;
+  margin-left: 35px;
 }
 
 .primary-text {
@@ -82,9 +78,9 @@ header {
   align-items: center;
   color: #172b4d;
   flex: none;
-  order: 0;
   flex-grow: 0;
   margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .secondary-text {
@@ -95,9 +91,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  margin-top: 0;
 }
 
 .supportive-text {
@@ -110,7 +104,6 @@ header {
   line-height: 24px;
   color: #7f8cff;
   flex: none;
-  order: 3;
   flex-grow: 0;
 }
 
@@ -177,52 +170,6 @@ header {
   left: 132.98px;
   top: 111.81px;
   transform: rotate(52.97deg);
-}
-
-.social-media-images {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.twitter-icon {
-  position: absolute;
-  left: 6.4%;
-  right: 88.27%;
-  top: 77.81%;
-  bottom: 18.88%;
-}
-
-.linkedin-icon {
-  position: absolute;
-  left: 16.4%;
-  right: 78.27%;
-  top: 77.81%;
-  bottom: 18.88%;
-}
-
-.multitrabajos-icon {
-  position: absolute;
-  left: 27.47%;
-  right: 67.2%;
-  top: 78.15%;
-  bottom: 19.21%;
-}
-
-.github-icon {
-  position: absolute;
-  left: 38.13%;
-  right: 57.07%;
-  top: 77.81%;
-  bottom: 18.87%;
-}
-
-.two-fingers-icon {
-  position: absolute;
-  left: 48%;
-  right: 48.22%;
-  top: 77.81%;
-  bottom: 18.87%;
 }
 
 .ellipse-15 {
