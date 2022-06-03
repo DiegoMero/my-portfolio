@@ -2,7 +2,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
   height: 718px;
   background: #fff;
   justify-content: flex-start;
@@ -507,12 +506,11 @@ ul {
 
 .about-me-container {
   margin-top: 100px;
-  width: 375px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 1263px;
-  left: 375px;
   top: 4769px;
   background: #fff;
 }
@@ -1023,32 +1021,34 @@ ul {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 1440px;
     background: #e5e5e5;
   }
 
   header {
-    background-image: url(images/header-background-shape-desktop.png);
-    width: 1440px;
+    background: url(images/header-background-shape-desktop.png);
+    background-size: contain;
+    width: 100%;
     height: 916px;
-    left: 0;
-    top: 1px;
   }
 
   .headline {
-    width: 1440px;
+    background: url(images/header-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50px 150px;
+    width: 100%;
+    height: 846px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 150px 0;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar {
     position: fixed;
-    width: 1440px;
+    width: 100%;
     height: 72px;
-    left: 0;
-    top: 0;
   }
 
   .logo-placeholder {
@@ -1083,7 +1083,7 @@ ul {
   }
 
   .primary-text {
-    width: 920px;
+    width: 800px;
     height: 122px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1094,6 +1094,7 @@ ul {
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
+    margin-right: 120px;
   }
 
   .secondary-text {
@@ -1124,82 +1125,6 @@ ul {
 
   .background-images {
     display: none;
-  }
-
-  .ellipse-11desktop {
-    position: absolute;
-    left: 80.2px;
-    top: 225.68px;
-  }
-
-  .ellipse-4desktop {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    left: 839px;
-    top: 758px;
-  }
-
-  .rectangle-7desktop {
-    position: absolute;
-    left: 693.25px;
-    top: 238.57px;
-  }
-
-  .ellipse-5desktop {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    left: 708px;
-    top: 257px;
-  }
-
-  .rectangle-6desktop {
-    position: absolute;
-    left: 34.6px;
-    top: 168.92px;
-  }
-
-  .rectangle-4desktop {
-    position: absolute;
-    left: 1146px;
-    top: 141px;
-  }
-
-  .ellipse-3desktop {
-    position: absolute;
-    left: 1208px;
-    top: 212px;
-  }
-
-  .rectangle-5desktop {
-    position: absolute;
-    left: 731.44px;
-    top: 755px;
-  }
-
-  .ellipse-8desktop {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 379px;
-    top: 185px;
-  }
-
-  .ellipse-12desktop {
-    position: absolute;
-    width: 36.9px;
-    height: 18.45px;
-    left: 290.7px;
-    top: 764.93px;
-  }
-
-  .ellipse-13desktop {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    left: 276.06px;
-    top: 780.37px;
   }
 
   .desktop-menu {
@@ -1258,13 +1183,11 @@ ul {
   }
 
   .works {
-    width: 1440px;
-    display: grid;
-    padding: 142px;
+    width: 100%;
     gap: 142px;
     height: 2694px;
-    left: 0;
     top: 917px;
+    padding-top: 150px;
   }
 
   .card {
@@ -1383,7 +1306,7 @@ ul {
   }
 
   .skill-list {
-    margin-right: 250px;
+    margin-right: 150px;
   }
 
   .skills {
@@ -1431,7 +1354,7 @@ ul {
   .languajes-skills {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     padding: 12px;
     gap: 12px;
     width: 414px;
@@ -1442,23 +1365,21 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1440px;
+    width: 100%;
     height: 924px;
-    left: 1440px;
     top: 4535px;
-    padding: 150px;
-    margin-left: 100px;
+    padding-right: 0;
+    margin-top: 150px;
   }
 
   .first-container {
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
     width: 400px;
     height: 392px;
     top: 3753px;
-    margin-right: 150px;
   }
 
   .description2 {
@@ -1477,10 +1398,10 @@ ul {
     flex-direction: column;
     align-items: center;
     background: #fff;
-    background-image: url(images/contact-form-background.png);
-    width: 1440px;
+    background: url(images/contact-form-background-shapes1x.png), url(images/contact-form-background.png);
+    background-size: contain, cover;
+    width: 100%;
     height: 846px;
-    left: 0;
     top: 5125px;
     padding-bottom: 100px;
     background-repeat: no-repeat;
@@ -1577,13 +1498,13 @@ ul {
 
   .rectangle-4desktop2 {
     position: absolute;
-    left: 1211.59px;
+    left: 1011.59px;
     top: 4650.28px;
   }
 
   .ellipse-3desktop2 {
     position: absolute;
-    left: 1237px;
+    left: 1037px;
     top: 4687px;
   }
 
