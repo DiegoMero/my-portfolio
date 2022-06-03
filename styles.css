@@ -151,6 +151,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio1:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio2 {
@@ -158,6 +164,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio2:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio3 {
@@ -165,6 +177,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio3:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio4 {
@@ -172,6 +190,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio4:hover {
+  transform: rotate(360deg);
 }
 
 .project-title {
@@ -915,42 +939,6 @@ ul {
   line-height: 24px;
   color: #5e6c84;
   border: 1px solid #c1c7d0;
-}
-
-.snapshot-portfolio1 {
-  display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio1:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio2 {
-  display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio2:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio3 {
-  display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio3:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio4 {
-  display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio4:hover {
-  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 768px) {
