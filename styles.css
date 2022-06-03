@@ -944,7 +944,7 @@ ul {
     background: url(images/header-background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0px 100px;
+    background-position: 0 100px;
     width: 100%;
     height: 846px;
     display: flex;
