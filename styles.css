@@ -917,6 +917,42 @@ ul {
   border: 1px solid #c1c7d0;
 }
 
+.snapshot-portfolio1 {
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio1:hover {
+  transform: rotate(360deg);
+}
+
+.snapshot-portfolio2 {
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio2:hover {
+  transform: rotate(360deg);
+}
+
+.snapshot-portfolio3 {
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio3:hover {
+  transform: rotate(360deg);
+}
+
+.snapshot-portfolio4 {
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio4:hover {
+  transform: rotate(360deg);
+}
+
 @media screen and (max-width: 768px) {
   body {
     margin: 0;
