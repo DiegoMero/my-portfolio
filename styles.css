@@ -151,6 +151,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio1:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio2 {
@@ -158,6 +164,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio2:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio3 {
@@ -165,6 +177,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio3:hover {
+  transform: rotate(360deg);
 }
 
 .snapshot-portfolio4 {
@@ -172,6 +190,12 @@ ul {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.snapshot-portfolio4:hover {
+  transform: rotate(360deg);
 }
 
 .project-title {
