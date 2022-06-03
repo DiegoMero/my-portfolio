@@ -1,5 +1,6 @@
 body {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   height: 718px;
@@ -9,7 +10,7 @@ body {
 
 .navbar {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 48px;
   display: flex;
   align-items: center;
@@ -59,15 +60,16 @@ body {
 }
 
 .headline {
+  background: url(images/header-shapes-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -10px 50px;
   display: flex;
   flex-direction: column;
   padding: 114px 24px;
-  width: 375px;
+  width: 100%;
   height: 604px;
-  left: calc(50% - 375px / 2);
-  top: 92px;
   align-items: flex-start;
-  margin-left: 35px;
 }
 
 .primary-text {
@@ -111,108 +113,6 @@ body {
   flex-grow: 0;
 }
 
-.rectangle-6 {
-  position: absolute;
-  width: 51.99px;
-  height: 9.3px;
-  left: -34px;
-  top: 97.49px;
-  background: #ebebff;
-  transform: rotate(-46.14deg);
-}
-
-.ellipse-11 {
-  position: absolute;
-  left: -60px;
-  top: 100.47px;
-}
-
-.ellipse-8 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 214px;
-  top: 66px;
-  background: #fff;
-  box-sizing: border-box;
-}
-
-.rectangle-4 {
-  position: absolute;
-  width: 95.58px;
-  height: 22.02px;
-  left: 294px;
-  top: 121.79px;
-  background: #ebebff;
-  transform: rotate(-30deg);
-}
-
-.ellipse-3 {
-  position: absolute;
-  left: 323px;
-  top: 134.24px;
-}
-
-.rectangle-7 {
-  position: absolute;
-  width: 26.46px;
-  height: 4.73px;
-  left: 127.18px;
-  top: 107.59px;
-  background: #6070ff;
-  transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
-}
-
-.ellipse-5 {
-  position: absolute;
-  width: 11px;
-  height: 10px;
-  left: 132.98px;
-  top: 111.81px;
-  transform: rotate(52.97deg);
-}
-
-.ellipse-15 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 53px;
-  top: 601px;
-}
-
-.rectangle-5 {
-  position: absolute;
-  width: 68.06px;
-  height: 45.18px;
-  left: 191.82px;
-  top: 609px;
-}
-
-.ellipse-4 {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 237px;
-  top: 613.1px;
-}
-
-.ellipse-12 {
-  position: absolute;
-  width: 24.14px;
-  height: 12.07px;
-  left: 341.76px;
-  top: 486.69px;
-}
-
-.ellipse-13 {
-  position: absolute;
-  width: 30.1px;
-  height: 30.1px;
-  left: 332.18px;
-  top: 496.44px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -226,7 +126,7 @@ ul {
   grid-row-start: 1;
   grid-row-end: 5;
   height: 2788px;
-  width: 375px;
+  width: 100%;
   left: 0;
   padding: 114px, 24px, 114px, 24px;
   top: 718px;
@@ -506,7 +406,7 @@ ul {
 
 .about-me-container {
   margin-top: 100px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -856,13 +756,15 @@ ul {
 }
 
 .contact-me-container {
-  background-image: url(images/contact-me.png);
-  width: 375px;
+  background: url(images/contact-form-shapes-mobile1x.png), url(images/contact-me.png);
+  background-repeat: no-repeat;
+  background-size: 225px, contain;
+  background-position: right;
+  width: 100%;
   height: 779px;
-  left: 0;
-  top: 4500px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .contact-me-title {
@@ -910,7 +812,7 @@ ul {
 
 #name {
   height: 48px;
-  width: 327px;
+  width: 300px;
   left: 24px;
   top: 4991px;
   border-radius: 10px;
@@ -918,7 +820,7 @@ ul {
 
 #mail {
   height: 48px;
-  width: 327px;
+  width: 300px;
   left: 24px;
   top: 5059px;
   border-radius: 10px;
@@ -926,7 +828,7 @@ ul {
 
 #msg {
   height: 170px;
-  width: 327px;
+  width: 300px;
   left: 24px;
   top: 5125px;
   border-radius: 10px;
@@ -1460,59 +1362,5 @@ ul {
     width: 447px;
     height: 170px;
     border-radius: 0;
-  }
-
-  .ellipse-5desktop2 {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 111.53px;
-    top: 5000.17px;
-  }
-
-  .rectangle-7desktop2 {
-    position: absolute;
-    left: 100.86px;
-    top: 4949.61px;
-  }
-
-  .rectangle-6desktop2 {
-    position: absolute;
-    left: 337px;
-    top: 5342.35px;
-  }
-
-  .ellipse-11desktop2 {
-    position: absolute;
-    left: 365.92px;
-    top: 5360.79px;
-  }
-
-  .ellipse-12desktop2 {
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    left: 470px;
-    top: 4593px;
-  }
-
-  .rectangle-4desktop2 {
-    position: absolute;
-    left: 1011.59px;
-    top: 4650.28px;
-  }
-
-  .ellipse-3desktop2 {
-    position: absolute;
-    left: 1037px;
-    top: 4687px;
-  }
-
-  .ellipse-13desktop2 {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    left: 1129px;
-    top: 5150px;
   }
 }
