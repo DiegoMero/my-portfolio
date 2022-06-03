@@ -1,11 +1,11 @@
 body {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   height: 718px;
   background: #fff;
   justify-content: flex-start;
+  margin: 0;
 }
 
 .navbar {
@@ -70,6 +70,7 @@ body {
   width: 100%;
   height: 604px;
   align-items: flex-start;
+  padding-right: 0;
 }
 
 .primary-text {
@@ -127,7 +128,6 @@ ul {
   grid-row-end: 5;
   height: 2788px;
   width: 100%;
-  left: 0;
   padding: 114px, 24px, 114px, 24px;
   top: 718px;
 }
@@ -758,19 +758,19 @@ ul {
 .contact-me-container {
   background: url(images/contact-form-shapes-mobile1x.png), url(images/contact-me.png);
   background-repeat: no-repeat;
-  background-size: 225px, contain;
+  background-size: contain, cover;
   background-position: right;
   width: 100%;
   height: 779px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 50px;
 }
 
 .contact-me-title {
-  width: 801px;
+  width: auto;
   height: 56px;
-  left: -213px;
   top: 4734px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -778,11 +778,11 @@ ul {
   font-size: 40px;
   line-height: 52px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   margin-bottom: 0;
-  margin-left: 50px;
   margin-top: 100px;
 }
 
@@ -816,9 +816,11 @@ ul {
   left: 24px;
   top: 4991px;
   border-radius: 10px;
+  border-style: hidden;
 }
 
 #mail {
+  border-style: hidden;
   height: 48px;
   width: 300px;
   left: 24px;
@@ -916,19 +918,24 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .background-images-desktop {
-    display: none;
+  body {
+    margin: 0;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body {
     background: #e5e5e5;
+    width: 100%;
+    margin: 0;
   }
 
   header {
     background: url(images/header-background-shape-desktop.png);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     width: 100%;
     height: 916px;
   }
@@ -937,7 +944,7 @@ ul {
     background: url(images/header-background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50px 150px;
+    background-position: 0px 100px;
     width: 100%;
     height: 846px;
     display: flex;
@@ -1023,10 +1030,6 @@ ul {
 
   .icons {
     margin-right: 720px;
-  }
-
-  .background-images {
-    display: none;
   }
 
   .desktop-menu {
@@ -1299,7 +1302,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
     background: url(images/contact-form-background-shapes1x.png), url(images/contact-form-background.png);
     background-size: contain, cover;
     width: 100%;
