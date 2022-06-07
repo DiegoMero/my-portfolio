@@ -323,8 +323,7 @@ ul {
   line-height: 24px;
   border: 1px solid #6070ff;
   color: #396df2;
-
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .action-button:hover {
@@ -523,8 +522,7 @@ ul {
   letter-spacing: 0.03em;
   color: #396df2;
   background-color: white;
-
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .action-button2:hover {
@@ -882,8 +880,7 @@ ul {
   line-height: 24px;
   color: #6070ff;
   border: #6070ff;
-
-  transition: all .5s
+  transition: all 0.5s
 }
 
 .action-button3:hover {
@@ -1073,7 +1070,6 @@ ul {
     height: 40px;
     left: 1039px;
     top: 16px;
-
     cursor: pointer;
   }
 
