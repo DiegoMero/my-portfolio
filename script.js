@@ -1,5 +1,4 @@
 const hamburger = document.querySelector('.menu');
-hamburger.addEventListener('click', displaymenu);
 const body = document.querySelector('body');
 
 function displaymenu() {
@@ -35,3 +34,5 @@ function displaymenu() {
   menu.appendChild(contact);
   body.appendChild(menu);
 }
+
+hamburger.addEventListener('click', displaymenu);
