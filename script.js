@@ -15,14 +15,20 @@ function displaymenu(){
   iconX.src='./images/Iconx.png';
   iconX.addEventListener('click', ()=>{body.removeChild(menu)});
 
-  let portfolio = document.createElement('h2');
+  let portfolio = document.createElement('a');
+  portfolio.href= '#works-section';
   portfolio.textContent = "Portfolio";
+  portfolio.addEventListener('click', ()=>{body.removeChild(menu)});
 
-  let aboutme = document.createElement('h2');
-  aboutme.textContent = "Aboutme";
+  let aboutme = document.createElement('a');
+  aboutme.href= '#about-me-section';
+  aboutme.textContent = "About";
+  aboutme.addEventListener('click', ()=>{body.removeChild(menu)});
 
-  let contact = document.createElement('h2');
+  let contact = document.createElement('a');
+  contact.href= '#contact-me-section';
   contact.textContent = "Contact";
+  contact.addEventListener('click', ()=>{body.removeChild(menu)});
   
   menu.appendChild(iconX);
   menu.appendChild(portfolio);
