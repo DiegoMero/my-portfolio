@@ -15,7 +15,7 @@ function displaymenu() {
   portfolio.href = '#works-section';
   portfolio.textContent = 'Portfolio';
   portfolio.className = 'menu-text-style';
-  portfolio.addEventListener('click', () => { body.removeChild(menu); }); 
+  portfolio.addEventListener('click', () => { body.removeChild(menu); });
 
   const aboutme = document.createElement('a');
   aboutme.href = '#about-me-section';
