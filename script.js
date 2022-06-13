@@ -1,6 +1,6 @@
 let hamburger = document.querySelector('.menu');
 
-hamburger.addEventListener('click', displaymenu)
+hamburger.addEventListener('click', displaymenu);
 
 let body = document.querySelector('body');
 
@@ -12,7 +12,8 @@ function displaymenu(){
   menu.className = 'menu-attributes';
 
   let iconX = document.createElement('img');
-  iconX.src='./images/Iconx.png'
+  iconX.src='./images/Iconx.png';
+  iconX.addEventListener('click', ()=>{body.removeChild(menu)});
 
   let portfolio = document.createElement('h2');
   portfolio.textContent = "Portfolio";
@@ -30,6 +31,5 @@ function displaymenu(){
 
   body.appendChild(menu);
 }
-
 
 console.log(hamburger)
