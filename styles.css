@@ -1393,8 +1393,7 @@ ul {
   }
 }
 
-
-.menu-attributes{
+.menu-attributes {
   position: absolute;
   background-color: rgba(96, 112, 255, 0.8);
   width: 100%;
@@ -1413,7 +1412,7 @@ ul {
 
 .menu-text-style {
   height: 24px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
