@@ -1424,3 +1424,11 @@ ul {
   text-decoration: none;
   margin-left: 50px;
 }
+
+.modal{
+  width: 343px;
+  height: 713px;
+  background-color: white;
+  position: fixed;
+  margin-top: 60px;
+}
