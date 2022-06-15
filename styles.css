@@ -1409,17 +1409,16 @@ ul {
 }
 
 .popup-background {
-  background: #FFFFFF;
+  background: #fff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 16px;
   gap: 12px;
   position: fixed;
   width: 343px;
-  height: 710px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-top: 20px;
 }
@@ -1428,7 +1427,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
 }
 
 .popupFrame {
@@ -1440,11 +1438,7 @@ ul {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
-}
-
-.xIcon2 {
-  padding-left: 180px;
+  color: #172b4d;
 }
 
 .popup-description {
@@ -1461,16 +1455,16 @@ color: #344563;
   height: 56px;
   display: flex;
   flex-direction: row;
-  gap:15px;
+  gap: 15px;
 }
 
 @media only screen and (min-width: 768px) {
   .popup-background {
     position: fixed;
     width: 1156px;
-    height: 1163px;
-    background: #FFFFFF;
-    border: 1px solid #EBECF0;
+    height: auto;
+    background: #fff;
+    border: 1px solid #ebecf0;
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     top: 60px;
@@ -1482,13 +1476,68 @@ color: #344563;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    width: 1108px;
     height: 84px;
+  }
+
+  .popupFrame {
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
   }
 
   .image-popup0{
     content: url(./images/SnapshootPortfolioDesktop.png);
     width: 100%;
+    height: 600px;
   }
 
+  .image-popup1{
+    content: url(./images/SnapshootPortfolioDesktop2.png);
+    width: 100%;
+    height: 600px;
+  }
+
+  .image-popup2{
+    content: url(./images/SnapshootPortfolioDesktop3.png);
+    width: 100%;
+    height: 600px;
+  }
+
+  .image-popup3{
+    content: url(./images/SnapshootPortfolioDesktop4.png);
+    width: 100%;
+    height: 600px;
+  }
+
+  .popup-mini-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .popup-description {
+    display: flex;
+    width: 778px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .popup-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 306px;
+    height: 157px;
+    padding-top: 20px;
+  }
 }

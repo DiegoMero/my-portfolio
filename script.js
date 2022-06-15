@@ -133,8 +133,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const button = document.createElement('button');
   button.innerText = 'See Project';
-  button.className = 'action-button button'+i;
-  // button.id = i;
+  button.className = `action-button button${i}`;
 
   cardsContainer.appendChild(card);
   card.appendChild(snapshootPortfolio);
@@ -158,7 +157,7 @@ let buttons = document.querySelectorAll('.card button');
 buttons = [...buttons];
 
 function displaymodal(e) {
-  let element = e.srcElement.className.slice(-1);
+  const element = e.srcElement.className.slice(-1);
   const popupBackground = document.createElement('div');
   popupBackground.className = 'popup-background';
   body.appendChild(popupBackground);
@@ -172,11 +171,15 @@ function displaymodal(e) {
   popupFrame1.innerText = projects[element].name;
   primaryText.appendChild(popupFrame1);
 
+  const xContainer = document.createElement('div');
+  xContainer.className = 'xContainer';
+  popupFrame1.appendChild(xContainer);
+
   const xIcon2 = document.createElement('img');
   xIcon2.className = 'xIcon2';
   xIcon2.addEventListener('click', () => { body.removeChild(popupBackground); });
   xIcon2.src = 'images/greyxicon.png';
-  popupFrame1.appendChild(xIcon2);
+  xContainer.appendChild(xIcon2);
 
   const popupFrame2 = document.createElement('div');
   popupFrame2.className = 'frame';
@@ -207,17 +210,21 @@ function displaymodal(e) {
 
   const popupSnapshootPortfolio = document.createElement('img');
   popupSnapshootPortfolio.src = projects[element].featuredImg;
-  popupSnapshootPortfolio.className = 'image-popup'+element;
+  popupSnapshootPortfolio.className = `image-popup${element}`;
   popupBackground.appendChild(popupSnapshootPortfolio);
 
-  const leftBlock = document.createElement('div');
-  leftBlock.className = 'popup-left-block';
-  popupBackground.appendChild(leftBlock);
+  const container = document.createElement('div');
+  container.className = 'popup-mini-container';
+  popupBackground.appendChild(container);
 
   const popupDescription = document.createElement('p');
   popupDescription.className = 'popup-description';
   popupDescription.innerText = projects[element].description;
-  leftBlock.appendChild(popupDescription);
+  container.appendChild(popupDescription);
+
+  const leftBlock = document.createElement('div');
+  leftBlock.className = 'popup-left-block';
+  container.appendChild(leftBlock);
 
   const popupTag = document.createElement('div');
   popupTag.className = 'tag';
@@ -259,6 +266,6 @@ function displaymodal(e) {
   popupSeeSourceButton.appendChild(githubIcon);
 }
 
-for (let i = 0; i < buttons.length; i++) {
+for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', displaymodal);
 }
