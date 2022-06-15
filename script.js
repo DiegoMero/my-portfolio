@@ -340,9 +340,7 @@ form.addEventListener('submit', (event) => {
   // validate the form
   hasValue(form.elements["name"], NAME_REQUIRED);
   validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+
+  //validate if the email has uppercase
   checkUppercase(form.elements["email"], lowerCaseCheck);
-  // if valid, submit the form.
-  /* if (nameValid && emailValid && emailCheck) {
-    alert('Demo only. No form was posted.');
-  } */
 });
