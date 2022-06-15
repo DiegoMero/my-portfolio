@@ -206,6 +206,54 @@ function displaymodal() {
   const popupSnapshootPortfolio = document.createElement('img');
   popupSnapshootPortfolio.src = projects[0].featuredImg;
   popupBackground.appendChild(popupSnapshootPortfolio);
+
+  const leftBlock = document.createElement('div');
+  leftBlock.className = 'popup-left-block';
+  popupBackground.appendChild(leftBlock);
+
+  const popupDescription = document.createElement('p');
+  popupDescription.className = 'popup-description';
+  popupDescription.innerText = projects[0].description;
+  leftBlock.appendChild(popupDescription);
+
+  const popupTag = document.createElement('div');
+  popupTag.className = 'tag';
+  leftBlock.appendChild(popupTag);
+
+  for (let j = 0; j < projects[0].technologies.length; j += 1) {
+    const technologiesItem = document.createElement('div');
+    technologiesItem.innerText = projects[0].technologies[j];
+    technologiesItem.className = `mini-container${j}`;
+    popupTag.appendChild(technologiesItem);
+  }
+
+  const devider = document.createElement('img');
+  devider.src = 'images/Vector4.png';
+  leftBlock.appendChild(devider);
+
+  const popupButtons = document.createElement('div');
+  popupButtons.className = 'popup-buttons';
+  leftBlock.appendChild(popupButtons);
+
+  const popupSeeLiveButton = document.createElement('a');
+  popupSeeLiveButton.className = 'action-button';
+  popupSeeLiveButton.innerText = 'See live';
+  popupSeeLiveButton.href = projects[0].linkLive;
+  popupButtons.appendChild(popupSeeLiveButton);
+
+  const seeLiveIcon = document.createElement('img');
+  seeLiveIcon.src = 'images/seeLiveIcon.png';
+  popupSeeLiveButton.appendChild(seeLiveIcon);
+
+  const popupSeeSourceButton = document.createElement('a');
+  popupSeeSourceButton.className = 'action-button';
+  popupSeeSourceButton.innerText = 'See source';
+  popupSeeSourceButton.href = projects[0].linkSource;
+  popupButtons.appendChild(popupSeeSourceButton);
+
+  const githubIcon = document.createElement('img');
+  githubIcon.src = 'images/Github.png';
+  popupSeeSourceButton.appendChild(githubIcon);
 }
 
 for (let i = 0; i < buttons.length; i++) {
