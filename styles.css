@@ -144,56 +144,36 @@ ul {
   border-radius: 16px;
 }
 
-.snapshot-portfolio1 {
+.snapshot-portfolio0 {
   background: url(images/SnapshootPortfolio.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio1:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio2 {
+.snapshot-portfolio1 {
   background: url(images/SnapshootPortfolio2.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio2:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio3 {
+.snapshot-portfolio2 {
   background: url(images/SnapshootPortfolio3.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio3:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio4 {
+.snapshot-portfolio3 {
   background: url(images/SnapshootPortfolio4.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio4:hover {
-  transform: rotate(360deg);
 }
 
 .project-title {
@@ -248,19 +228,19 @@ ul {
   gap: 40px;
 }
 
-.mini-container1 {
+.mini-container0 {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4px, 12px, 4px, 12px;
   justify-content: center;
-  width: 53px;
+  width: 50px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
 }
 
-.mini-container2 {
+.mini-container1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,7 +252,7 @@ ul {
   border-radius: 8px;
 }
 
-.mini-container3 {
+.mini-container2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -285,8 +265,6 @@ ul {
 }
 
 .tag {
-  width: 29px;
-  height: 16px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -294,6 +272,8 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  display: flex;
+  gap: 15px;
 }
 
 .project-button-container {
@@ -1138,20 +1118,40 @@ ul {
     line-height: 24px;
   }
 
-  .card2 {
+  .card1 {
     flex-direction: row-reverse;
   }
 
-  .card4 {
+  .card3 {
     flex-direction: row-reverse;
   }
 
-  .snapshot-portfolio1 {
+  .snapshot-portfolio0 {
     background: url(images/SnapshootPortfolioDesktop.png);
     width: 544px;
     height: 448px;
     left: 24px;
     top: 24px;
+  }
+
+  .block0 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
+
+  .snapshot-portfolio1 {
+    background: url(images/SnapshootPortfolioDesktop2.png);
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    margin-left: auto;
   }
 
   .block1 {
@@ -1166,7 +1166,15 @@ ul {
   }
 
   .snapshot-portfolio2 {
-    background: url(images/SnapshootPortfolioDesktop2.png);
+    background: url(images/SnapshootPortfolioDesktop3.png);
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+  }
+
+  .snapshot-portfolio3 {
+    background: url(images/SnapshootPortfolioDesktop4.png);
     width: 544px;
     height: 448px;
     left: 590px;
@@ -1185,35 +1193,7 @@ ul {
     top: 24px;
   }
 
-  .snapshot-portfolio3 {
-    background: url(images/SnapshootPortfolioDesktop3.png);
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
-  }
-
-  .snapshot-portfolio4 {
-    background: url(images/SnapshootPortfolioDesktop4.png);
-    width: 544px;
-    height: 448px;
-    left: 590px;
-    top: 24px;
-    margin-left: auto;
-  }
-
   .block3 {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    gap: 24px;
-    width: 544px;
-    height: 445px;
-    left: 590px;
-    top: 24px;
-  }
-
-  .block4 {
     display: flex;
     flex-direction: column;
     padding: 24px;
