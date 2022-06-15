@@ -153,3 +153,61 @@ for (let i = 0; i < projects.length; i += 1) {
   block.appendChild(buttonContainer);
   buttonContainer.appendChild(button);
 }
+
+let buttons = document.querySelectorAll('.card button');
+buttons = [...buttons];
+
+function displaymodal() {
+  const popupBackground = document.createElement('div');
+  popupBackground.className = 'popup-background';
+  body.appendChild(popupBackground);
+
+  const primaryText = document.createElement('div');
+  primaryText.className = 'popup';
+  popupBackground.appendChild(primaryText);
+
+  const popupFrame1 = document.createElement('div');
+  popupFrame1.className = 'popupFrame';
+  popupFrame1.innerText = projects[0].name;
+  primaryText.appendChild(popupFrame1);
+
+  const xIcon2 = document.createElement('img');
+  xIcon2.className = 'xIcon2';
+  xIcon2.src = 'images/Iconx.png';
+  popupFrame1.appendChild(xIcon2);
+
+  const popupFrame2 = document.createElement('div');
+  popupFrame2.className = 'frame';
+  primaryText.appendChild(popupFrame2);
+
+  const popupCanopy = document.createElement('div');
+  popupCanopy.className = 'canopy';
+  popupCanopy.innerText = 'CANOPY';
+  popupFrame2.appendChild(popupCanopy);
+
+  const popupCounter = document.createElement('img');
+  popupCounter.src = 'images/Counter.png';
+  popupFrame2.appendChild(popupCounter);
+
+  const popupBackEndDev = document.createElement('div');
+  popupBackEndDev.className = 'back-end-dev';
+  popupBackEndDev.innerText = 'Back End Dev';
+  popupFrame2.appendChild(popupBackEndDev);
+
+  const popupCounter2 = document.createElement('img');
+  popupCounter2.src = 'images/Counter.png';
+  popupFrame2.appendChild(popupCounter2);
+
+  const popupYear = document.createElement('div');
+  popupYear.className = 'year';
+  popupYear.innerText = '2015';
+  popupFrame2.appendChild(popupYear);
+
+  const popupSnapshootPortfolio = document.createElement('img');
+  popupSnapshootPortfolio.src = projects[0].featuredImg;
+  popupBackground.appendChild(popupSnapshootPortfolio);
+}
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', displaymodal);
+}
