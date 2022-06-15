@@ -1427,6 +1427,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .popupFrame {
@@ -1439,6 +1440,8 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .popup-description {

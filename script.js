@@ -168,8 +168,12 @@ function displaymodal(e) {
 
   const popupFrame1 = document.createElement('div');
   popupFrame1.className = 'popupFrame';
-  popupFrame1.innerText = projects[element].name;
+  // popupFrame1.innerText = projects[element].name;
   primaryText.appendChild(popupFrame1);
+
+  const title = document.createElement('h2');
+  title.innerText = projects[element].name;
+  popupFrame1.appendChild(title);
 
   const xContainer = document.createElement('div');
   xContainer.className = 'xContainer';
