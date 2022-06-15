@@ -1444,13 +1444,18 @@ ul {
   justify-content: space-between;
 }
 
+.popup-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .popup-description {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #344563;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .popup-buttons {
@@ -1468,7 +1473,7 @@ color: #344563;
     height: auto;
     background: #fff;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     top: 60px;
   }
@@ -1477,7 +1482,7 @@ color: #344563;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 8px;
     height: 84px;
   }
@@ -1492,25 +1497,30 @@ color: #344563;
     color: #091e42;
   }
 
-  .image-popup0{
+  .popup-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .image-popup0 {
     content: url(./images/SnapshootPortfolioDesktop.png);
     width: 100%;
     height: 600px;
   }
 
-  .image-popup1{
+  .image-popup1 {
     content: url(./images/SnapshootPortfolioDesktop2.png);
     width: 100%;
     height: 600px;
   }
 
-  .image-popup2{
+  .image-popup2 {
     content: url(./images/SnapshootPortfolioDesktop3.png);
     width: 100%;
     height: 600px;
   }
 
-  .image-popup3{
+  .image-popup3 {
     content: url(./images/SnapshootPortfolioDesktop4.png);
     width: 100%;
     height: 600px;
@@ -1537,7 +1547,7 @@ color: #344563;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     width: 306px;
     height: 157px;
