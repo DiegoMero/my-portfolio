@@ -291,7 +291,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -303,6 +302,7 @@ ul {
   border: 1px solid #6070ff;
   color: #396df2;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .action-button:hover {
@@ -312,7 +312,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -332,7 +331,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -1404,4 +1402,84 @@ ul {
   color: #fff;
   text-decoration: none;
   margin-left: 50px;
+}
+
+.popup-background {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  position: fixed;
+  width: 343px;
+  height: 710px;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+}
+
+.popup-primary-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.popupFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.xIcon2 {
+  padding-left: 180px;
+}
+
+.popup-description {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #344563;
+}
+
+.popup-buttons {
+  width: 311px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .popup-background {
+    position: fixed;
+    width: 1156px;
+    height: 1163px;
+    background: #FFFFFF;
+    border: 1px solid #EBECF0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    top: 60px;
+  }
+
+  .popup-primary-text {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 1108px;
+height: 84px;
+  }
+
 }

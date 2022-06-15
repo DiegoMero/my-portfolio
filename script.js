@@ -163,7 +163,7 @@ function displaymodal() {
   body.appendChild(popupBackground);
 
   const primaryText = document.createElement('div');
-  primaryText.className = 'popup';
+  primaryText.className = 'popup-primary-text';
   popupBackground.appendChild(primaryText);
 
   const popupFrame1 = document.createElement('div');
@@ -173,7 +173,8 @@ function displaymodal() {
 
   const xIcon2 = document.createElement('img');
   xIcon2.className = 'xIcon2';
-  xIcon2.src = 'images/Iconx.png';
+  xIcon2.addEventListener('click', () => { body.removeChild(popupBackground); });
+  xIcon2.src = 'images/greyxicon.png';
   popupFrame1.appendChild(xIcon2);
 
   const popupFrame2 = document.createElement('div');
@@ -252,7 +253,7 @@ function displaymodal() {
   popupButtons.appendChild(popupSeeSourceButton);
 
   const githubIcon = document.createElement('img');
-  githubIcon.src = 'images/Github.png';
+  githubIcon.src = 'images/bluegithubicon.png';
   popupSeeSourceButton.appendChild(githubIcon);
 }
 
