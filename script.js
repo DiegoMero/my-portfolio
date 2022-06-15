@@ -133,8 +133,8 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const button = document.createElement('button');
   button.innerText = 'See Project';
-  button.className = 'action-button';
-  button.id = i;
+  button.className = 'action-button button'+i;
+  // button.id = i;
 
   cardsContainer.appendChild(card);
   card.appendChild(snapshootPortfolio);
@@ -157,7 +157,8 @@ for (let i = 0; i < projects.length; i += 1) {
 let buttons = document.querySelectorAll('.card button');
 buttons = [...buttons];
 
-function displaymodal() {
+function displaymodal(e) {
+  let element = e.srcElement.className.slice(-1);
   const popupBackground = document.createElement('div');
   popupBackground.className = 'popup-background';
   body.appendChild(popupBackground);
@@ -168,7 +169,7 @@ function displaymodal() {
 
   const popupFrame1 = document.createElement('div');
   popupFrame1.className = 'popupFrame';
-  popupFrame1.innerText = projects[0].name;
+  popupFrame1.innerText = projects[element].name;
   primaryText.appendChild(popupFrame1);
 
   const xIcon2 = document.createElement('img');
@@ -205,7 +206,8 @@ function displaymodal() {
   popupFrame2.appendChild(popupYear);
 
   const popupSnapshootPortfolio = document.createElement('img');
-  popupSnapshootPortfolio.src = projects[0].featuredImg;
+  popupSnapshootPortfolio.src = projects[element].featuredImg;
+  popupSnapshootPortfolio.className = 'image-popup'+element;
   popupBackground.appendChild(popupSnapshootPortfolio);
 
   const leftBlock = document.createElement('div');
@@ -214,16 +216,16 @@ function displaymodal() {
 
   const popupDescription = document.createElement('p');
   popupDescription.className = 'popup-description';
-  popupDescription.innerText = projects[0].description;
+  popupDescription.innerText = projects[element].description;
   leftBlock.appendChild(popupDescription);
 
   const popupTag = document.createElement('div');
   popupTag.className = 'tag';
   leftBlock.appendChild(popupTag);
 
-  for (let j = 0; j < projects[0].technologies.length; j += 1) {
+  for (let j = 0; j < projects[element].technologies.length; j += 1) {
     const technologiesItem = document.createElement('div');
-    technologiesItem.innerText = projects[0].technologies[j];
+    technologiesItem.innerText = projects[element].technologies[j];
     technologiesItem.className = `mini-container${j}`;
     popupTag.appendChild(technologiesItem);
   }
@@ -239,7 +241,7 @@ function displaymodal() {
   const popupSeeLiveButton = document.createElement('a');
   popupSeeLiveButton.className = 'action-button';
   popupSeeLiveButton.innerText = 'See live';
-  popupSeeLiveButton.href = projects[0].linkLive;
+  popupSeeLiveButton.href = projects[element].linkLive;
   popupButtons.appendChild(popupSeeLiveButton);
 
   const seeLiveIcon = document.createElement('img');
@@ -249,7 +251,7 @@ function displaymodal() {
   const popupSeeSourceButton = document.createElement('a');
   popupSeeSourceButton.className = 'action-button';
   popupSeeSourceButton.innerText = 'See source';
-  popupSeeSourceButton.href = projects[0].linkSource;
+  popupSeeSourceButton.href = projects[element].linkSource;
   popupButtons.appendChild(popupSeeSourceButton);
 
   const githubIcon = document.createElement('img');

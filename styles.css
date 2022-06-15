@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .navbar {
   width: 100%;
   height: 48px;
@@ -1417,6 +1421,7 @@ ul {
   height: 710px;
   border: 1px solid #DFE1E6;
   border-radius: 16px;
+  margin-top: 20px;
 }
 
 .popup-primary-text {
@@ -1473,13 +1478,17 @@ color: #344563;
 
   .popup-primary-text {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 1108px;
+    height: 84px;
+  }
 
-width: 1108px;
-height: 84px;
+  .image-popup0{
+    content: url(./images/SnapshootPortfolioDesktop.png);
+    width: 100%;
   }
 
 }
