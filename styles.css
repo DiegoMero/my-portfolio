@@ -1476,6 +1476,7 @@ ul {
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     top: 60px;
+    overflow: hidden;
   }
 
   .popup-primary-text {
