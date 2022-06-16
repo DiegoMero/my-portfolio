@@ -1498,15 +1498,6 @@ ul {
   gap: 15px;
 }
 
-small{
-  color: red;
-  background-color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-
 .popupbutton {
   font-size: 13px;
 }

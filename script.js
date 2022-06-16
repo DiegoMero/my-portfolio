@@ -158,9 +158,14 @@ buttons = [...buttons];
 
 function displaymodal(e) {
   const element = e.srcElement.className.slice(-1);
+
+  const backgroundStyles = document.createElement('body');
+  backgroundStyles.className = 'background-style';
+  body.appendChild(backgroundStyles);
+
   const popupBackground = document.createElement('div');
   popupBackground.className = 'popup-background';
-  body.appendChild(popupBackground);
+  backgroundStyles.appendChild(popupBackground);
 
   const primaryText = document.createElement('div');
   primaryText.className = 'popup-primary-text';
@@ -170,7 +175,7 @@ function displaymodal(e) {
   popupFrame1.className = 'popupFrame';
   primaryText.appendChild(popupFrame1);
 
-  const title = document.createElement('h3');
+  const title = document.createElement('h6');
   title.className = 'popup-title';
   title.innerText = projects[element].name;
   popupFrame1.appendChild(title);
@@ -181,7 +186,7 @@ function displaymodal(e) {
 
   const xIcon2 = document.createElement('img');
   xIcon2.className = 'xIcon2';
-  xIcon2.addEventListener('click', () => { body.removeChild(popupBackground); });
+  xIcon2.addEventListener('click', () => { body.removeChild(backgroundStyles); });
   xIcon2.src = 'images/greyxicon.png';
   xContainer.appendChild(xIcon2);
 
@@ -250,7 +255,7 @@ function displaymodal(e) {
   leftBlock.appendChild(popupButtons);
 
   const popupSeeLiveButton = document.createElement('a');
-  popupSeeLiveButton.className = 'action-button';
+  popupSeeLiveButton.className = 'action-button popupbutton';
   popupSeeLiveButton.innerText = 'See live';
   popupSeeLiveButton.href = projects[element].linkLive;
   popupButtons.appendChild(popupSeeLiveButton);
@@ -260,7 +265,7 @@ function displaymodal(e) {
   popupSeeLiveButton.appendChild(seeLiveIcon);
 
   const popupSeeSourceButton = document.createElement('a');
-  popupSeeSourceButton.className = 'action-button';
+  popupSeeSourceButton.className = 'action-button popupbutton';
   popupSeeSourceButton.innerText = 'See source';
   popupSeeSourceButton.href = projects[element].linkSource;
   popupButtons.appendChild(popupSeeSourceButton);
@@ -268,70 +273,12 @@ function displaymodal(e) {
   const githubIcon = document.createElement('img');
   githubIcon.src = 'images/bluegithubicon.png';
   popupSeeSourceButton.appendChild(githubIcon);
+
+  const popupScroll = document.querySelector('body');
+  popupScroll.className = 'popup-scroll';
+  xIcon2.addEventListener('click', () => { popupScroll.classList.remove('popup-scroll'); });
 }
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', displaymodal);
 }
-
-function showMessage(input, message, type) {
-  const msg = document.querySelector('small');
-  msg.innerText = message;
-  input.className = type ? 'success' : 'error';
-  return type;
-}
-
-function showError(input, message) {
-  return showMessage(input, message, false);
-}
-
-function showSuccess(input) {
-  return showMessage(input, '', true);
-}
-
-function hasValue(input, message) {
-  if (input.value.trim() === '') {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-
-function isUpper(str) {
-  return !/^[a-z]*$/.test(str) && /[A-Z]/.test(str);
-}
-
-function validateEmail(input, requiredMsg, invalidMsg) {
-  if (!hasValue(input, requiredMsg)) {
-    return false;
-  }
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  const email = input.value.trim();
-
-  if (!emailRegex.test(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
-
-function checkUppercase(input, invalidMsg) {
-  const email = input.value.trim();
-  if (isUpper(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
-
-const form = document.querySelector('form');
-
-const lowerCaseCheck = 'Email needs to be in lower case';
-const NAME_REQUIRED = 'Please enter your name';
-const EMAIL_REQUIRED = 'Please enter your email';
-const EMAIL_INVALID = 'Please enter a correct email address format';
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  hasValue(form.elements.name, NAME_REQUIRED);
-  validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  checkUppercase(form.elements.email, lowerCaseCheck);
-});
