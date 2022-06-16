@@ -352,7 +352,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // storage-test
-let formData = {
+const formData = {
   name: '',
   email: '',
   msg: '',
@@ -375,7 +375,7 @@ emailData.addEventListener('input', store);
 messageData.addEventListener('input', store);
 
 const fillData = localStorage.getItem('data');
-if (fillData != null){
+if (fillData != null) {
   const fillDataJson = JSON.parse(fillData);
   fullName.value = fillDataJson.name;
   emailData.value = fillDataJson.email;
