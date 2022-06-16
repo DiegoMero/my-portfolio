@@ -1611,3 +1611,10 @@ ul {
     padding-top: 20px;
   }
 }
+
+small {
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
