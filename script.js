@@ -170,7 +170,7 @@ function displaymodal(e) {
   popupFrame1.className = 'popupFrame';
   primaryText.appendChild(popupFrame1);
 
-  const title = document.createElement('h3');
+  const title = document.createElement('h6');
   title.className = 'popup-title';
   title.innerText = projects[element].name;
   popupFrame1.appendChild(title);
@@ -250,7 +250,7 @@ function displaymodal(e) {
   leftBlock.appendChild(popupButtons);
 
   const popupSeeLiveButton = document.createElement('a');
-  popupSeeLiveButton.className = 'action-button';
+  popupSeeLiveButton.className = 'action-button popupbutton';
   popupSeeLiveButton.innerText = 'See live';
   popupSeeLiveButton.href = projects[element].linkLive;
   popupButtons.appendChild(popupSeeLiveButton);
@@ -260,7 +260,7 @@ function displaymodal(e) {
   popupSeeLiveButton.appendChild(seeLiveIcon);
 
   const popupSeeSourceButton = document.createElement('a');
-  popupSeeSourceButton.className = 'action-button';
+  popupSeeSourceButton.className = 'action-button popupbutton';
   popupSeeSourceButton.innerText = 'See source';
   popupSeeSourceButton.href = projects[element].linkSource;
   popupButtons.appendChild(popupSeeSourceButton);

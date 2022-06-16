@@ -1417,10 +1417,11 @@ ul {
   padding: 16px;
   gap: 12px;
   position: fixed;
-  width: 343px;
+  width: 300px;
+  height: 490px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .popup-primary-text {
@@ -1436,12 +1437,31 @@ ul {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   color: #172b4d;
   width: 100%;
   justify-content: space-between;
+}
+
+.image-popup0 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup1 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup2 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup3 {
+  height: 100px;
+  width: 100%;
 }
 
 .popup-title {
@@ -1452,31 +1472,41 @@ ul {
 .popup-description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 11px;
   color: #344563;
+  width: 275px;
 }
 
 .popup-buttons {
-  width: 311px;
+  width: 275px;
   height: 56px;
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
 
+.popupbutton {
+  font-size: 13px;
+}
+
+.popupbutton:hover {
+  font-size: 13px;
+}
+
+.popupbutton:active {
+  font-size: 13px;
+}
+
 @media only screen and (min-width: 768px) {
   .popup-background {
     position: fixed;
     width: 1156px;
-    height: auto;
+    height: 100vh;
     background: #fff;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
-    top: 60px;
-    overflow: hidden;
+    margin-top: 40px;
   }
 
   .popup-primary-text {
