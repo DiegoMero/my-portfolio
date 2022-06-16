@@ -158,9 +158,14 @@ buttons = [...buttons];
 
 function displaymodal(e) {
   const element = e.srcElement.className.slice(-1);
+
+  const backgroundStyles = document.createElement('body');
+  backgroundStyles.className = 'background-style';
+  body.appendChild(backgroundStyles);
+
   const popupBackground = document.createElement('div');
   popupBackground.className = 'popup-background';
-  body.appendChild(popupBackground);
+  backgroundStyles.appendChild(popupBackground);
 
   const primaryText = document.createElement('div');
   primaryText.className = 'popup-primary-text';
@@ -181,7 +186,7 @@ function displaymodal(e) {
 
   const xIcon2 = document.createElement('img');
   xIcon2.className = 'xIcon2';
-  xIcon2.addEventListener('click', () => { body.removeChild(popupBackground); });
+  xIcon2.addEventListener('click', () => { body.removeChild(backgroundStyles); });
   xIcon2.src = 'images/greyxicon.png';
   xContainer.appendChild(xIcon2);
 
@@ -268,6 +273,10 @@ function displaymodal(e) {
   const githubIcon = document.createElement('img');
   githubIcon.src = 'images/bluegithubicon.png';
   popupSeeSourceButton.appendChild(githubIcon);
+
+  const popupScroll = document.querySelector('body');
+  popupScroll.className = 'popup-scroll';
+  xIcon2.addEventListener('click', () => { popupScroll.classList.remove('popup-scroll'); });
 }
 
 for (let i = 0; i < buttons.length; i += 1) {
