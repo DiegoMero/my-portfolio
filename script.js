@@ -350,3 +350,34 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// storage-test
+const formData = {
+  name: '',
+  email: '',
+  msg: '',
+};
+
+const fullName = form.elements.name;
+const emailData = form.elements.email;
+const messageData = form.elements.message;
+
+function store() {
+  formData.name = fullName.value;
+  formData.email = emailData.value;
+  formData.msg = messageData.value;
+  const formDataString = JSON.stringify(formData);
+  localStorage.setItem('data', formDataString);
+}
+
+fullName.addEventListener('input', store);
+emailData.addEventListener('input', store);
+messageData.addEventListener('input', store);
+
+const fillData = localStorage.getItem('data');
+if (fillData != null) {
+  const fillDataJson = JSON.parse(fillData);
+  fullName.value = fillDataJson.name;
+  emailData.value = fillDataJson.email;
+  messageData.value = fillDataJson.msg;
+}
