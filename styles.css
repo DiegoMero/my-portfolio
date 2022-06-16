@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .navbar {
   width: 100%;
   height: 48px;
@@ -144,56 +148,36 @@ ul {
   border-radius: 16px;
 }
 
-.snapshot-portfolio1 {
+.snapshot-portfolio0 {
   background: url(images/SnapshootPortfolio.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio1:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio2 {
+.snapshot-portfolio1 {
   background: url(images/SnapshootPortfolio2.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio2:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio3 {
+.snapshot-portfolio2 {
   background: url(images/SnapshootPortfolio3.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.snapshot-portfolio3:hover {
-  transform: rotate(360deg);
-}
-
-.snapshot-portfolio4 {
+.snapshot-portfolio3 {
   background: url(images/SnapshootPortfolio4.png);
   width: 295px;
   height: 220px;
   border-radius: 8px;
   display: block;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.snapshot-portfolio4:hover {
-  transform: rotate(360deg);
 }
 
 .project-title {
@@ -248,7 +232,7 @@ ul {
   gap: 40px;
 }
 
-.mini-container1 {
+.mini-container0 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -260,7 +244,7 @@ ul {
   border-radius: 8px;
 }
 
-.mini-container2 {
+.mini-container1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,7 +256,7 @@ ul {
   border-radius: 8px;
 }
 
-.mini-container3 {
+.mini-container2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -285,8 +269,6 @@ ul {
 }
 
 .tag {
-  width: 29px;
-  height: 16px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -294,6 +276,9 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .project-button-container {
@@ -310,7 +295,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -322,6 +306,7 @@ ul {
   border: 1px solid #6070ff;
   color: #396df2;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .action-button:hover {
@@ -331,7 +316,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -351,7 +335,6 @@ ul {
   padding: 12px;
   gap: 10px;
   width: 124px;
-  height: 48px;
   left: 0;
   top: calc(50% - 48px / 2);
   border-radius: 8px;
@@ -1138,20 +1121,40 @@ ul {
     line-height: 24px;
   }
 
-  .card2 {
+  .card1 {
     flex-direction: row-reverse;
   }
 
-  .card4 {
+  .card3 {
     flex-direction: row-reverse;
   }
 
-  .snapshot-portfolio1 {
+  .snapshot-portfolio0 {
     background: url(images/SnapshootPortfolioDesktop.png);
     width: 544px;
     height: 448px;
     left: 24px;
     top: 24px;
+  }
+
+  .block0 {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+    left: 590px;
+    top: 24px;
+  }
+
+  .snapshot-portfolio1 {
+    background: url(images/SnapshootPortfolioDesktop2.png);
+    width: 544px;
+    height: 448px;
+    left: 590px;
+    top: 24px;
+    margin-left: auto;
   }
 
   .block1 {
@@ -1166,7 +1169,15 @@ ul {
   }
 
   .snapshot-portfolio2 {
-    background: url(images/SnapshootPortfolioDesktop2.png);
+    background: url(images/SnapshootPortfolioDesktop3.png);
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+  }
+
+  .snapshot-portfolio3 {
+    background: url(images/SnapshootPortfolioDesktop4.png);
     width: 544px;
     height: 448px;
     left: 590px;
@@ -1185,35 +1196,7 @@ ul {
     top: 24px;
   }
 
-  .snapshot-portfolio3 {
-    background: url(images/SnapshootPortfolioDesktop3.png);
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
-  }
-
-  .snapshot-portfolio4 {
-    background: url(images/SnapshootPortfolioDesktop4.png);
-    width: 544px;
-    height: 448px;
-    left: 590px;
-    top: 24px;
-    margin-left: auto;
-  }
-
   .block3 {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    gap: 24px;
-    width: 544px;
-    height: 445px;
-    left: 590px;
-    top: 24px;
-  }
-
-  .block4 {
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -1423,4 +1406,208 @@ ul {
   color: #fff;
   text-decoration: none;
   margin-left: 50px;
+}
+
+.popup-scroll {
+  overflow: hidden;
+}
+
+.background-style {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.popup-background {
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  position: fixed;
+  width: 300px;
+  height: 490px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+.popup-primary-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.popupFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.image-popup0 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup1 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup2 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup3 {
+  height: 100px;
+  width: 100%;
+}
+
+.popup-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  color: #344563;
+  width: 275px;
+}
+
+.popup-buttons {
+  width: 275px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.popupbutton {
+  font-size: 13px;
+}
+
+.popupbutton:hover {
+  font-size: 13px;
+}
+
+.popupbutton:active {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+  .popup-scroll {
+    overflow: hidden;
+  }
+
+  .background-style {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .popup-background {
+    position: fixed;
+    width: 1156px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    margin-top: 40px;
+  }
+
+  .popup-primary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    height: 84px;
+  }
+
+  .popupFrame {
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .popup-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .image-popup0 {
+    content: url(./images/SnapshootPortfolioDesktop.png);
+    width: 100%;
+    height: 280px;
+  }
+
+  .image-popup1 {
+    content: url(./images/SnapshootPortfolioDesktop2.png);
+    width: 100%;
+    height: 280px;
+  }
+
+  .image-popup2 {
+    content: url(./images/SnapshootPortfolioDesktop3.png);
+    width: 100%;
+    height: 280px;
+  }
+
+  .image-popup3 {
+    content: url(./images/SnapshootPortfolioDesktop4.png);
+    width: 100%;
+    height: 280px;
+  }
+
+  .popup-mini-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .popup-description {
+    display: flex;
+    width: 778px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .popup-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    width: 306px;
+    height: 157px;
+    padding-top: 20px;
+  }
 }
