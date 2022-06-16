@@ -1408,6 +1408,19 @@ ul {
   margin-left: 50px;
 }
 
+.popup-scroll {
+  overflow: hidden;
+}
+
+.background-style {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .popup-background {
   background: #fff;
   box-sizing: border-box;
@@ -1417,10 +1430,11 @@ ul {
   padding: 16px;
   gap: 12px;
   position: fixed;
-  width: 343px;
+  width: 300px;
+  height: 490px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .popup-primary-text {
@@ -1436,12 +1450,31 @@ ul {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   color: #172b4d;
   width: 100%;
   justify-content: space-between;
+}
+
+.image-popup0 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup1 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup2 {
+  height: 100px;
+  width: 100%;
+}
+
+.image-popup3 {
+  height: 100px;
+  width: 100%;
 }
 
 .popup-title {
@@ -1452,14 +1485,13 @@ ul {
 .popup-description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 11px;
   color: #344563;
+  width: 275px;
 }
 
 .popup-buttons {
-  width: 311px;
+  width: 275px;
   height: 56px;
   display: flex;
   flex-direction: row;
@@ -1475,17 +1507,41 @@ small{
   font-weight: bold;
 }
 
+.popupbutton {
+  font-size: 13px;
+}
+
+.popupbutton:hover {
+  font-size: 13px;
+}
+
+.popupbutton:active {
+  font-size: 13px;
+}
+
 @media only screen and (min-width: 768px) {
+  .popup-scroll {
+    overflow: hidden;
+  }
+
+  .background-style {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
   .popup-background {
     position: fixed;
     width: 1156px;
-    height: auto;
+    height: 550px;
     background: #fff;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
-    top: 60px;
-    overflow: hidden;
+    margin-top: 40px;
   }
 
   .popup-primary-text {
@@ -1515,25 +1571,25 @@ small{
   .image-popup0 {
     content: url(./images/SnapshootPortfolioDesktop.png);
     width: 100%;
-    height: 600px;
+    height: 280px;
   }
 
   .image-popup1 {
     content: url(./images/SnapshootPortfolioDesktop2.png);
     width: 100%;
-    height: 600px;
+    height: 280px;
   }
 
   .image-popup2 {
     content: url(./images/SnapshootPortfolioDesktop3.png);
     width: 100%;
-    height: 600px;
+    height: 280px;
   }
 
   .image-popup3 {
     content: url(./images/SnapshootPortfolioDesktop4.png);
     width: 100%;
-    height: 600px;
+    height: 280px;
   }
 
   .popup-mini-container {

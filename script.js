@@ -275,10 +275,8 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 function showMessage(input, message, type) {
-  // get the small element and set the message
   const msg = document.querySelector('small');
   msg.innerText = message;
-  // update the class for the input
   input.className = type ? 'success' : 'error';
   return type;
 }
@@ -303,12 +301,10 @@ function isUpper(str) {
 }
 
 function validateEmail(input, requiredMsg, invalidMsg) {
-  // check if the value is not empty
   if (!hasValue(input, requiredMsg)) {
     return false;
   }
-  // validate email format
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = input.value.trim();
 
@@ -334,13 +330,8 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format';
 
 form.addEventListener('submit', (event) => {
-  // stop form submission
   event.preventDefault();
-
-  // validate the form
-  hasValue(form.elements["name"], NAME_REQUIRED);
-  validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-
-  //validate if the email has uppercase
-  checkUppercase(form.elements["email"], lowerCaseCheck);
+  hasValue(form.elements.name, NAME_REQUIRED);
+  validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  checkUppercase(form.elements.email, lowerCaseCheck);
 });
