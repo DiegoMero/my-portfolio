@@ -352,44 +352,32 @@ form.addEventListener('submit', (event) => {
 });
 
 // storage-test
-
-const formData = {
-  name: null,
-  email: null,
-  msg: null,
+let formData = {
+  name: '',
+  email: '',
+  msg: '',
 };
 
 const fullName = form.elements.name;
 const emailData = form.elements.email;
 const messageData = form.elements.message;
 
-fullName.addEventListener('input', storeName);
-function storeName() {
+function store() {
   formData.name = fullName.value;
-  const formDataString = JSON.stringify(formData);
-  localStorage.setItem('data', formDataString);
-}
-
-emailData.addEventListener('input', storeEmail);
-function storeEmail() {
   formData.email = emailData.value;
-  const formDataString = JSON.stringify(formData);
-  localStorage.setItem('data', formDataString);
-}
-
-messageData.addEventListener('input', storeMsg);
-function storeMsg() {
   formData.msg = messageData.value;
   const formDataString = JSON.stringify(formData);
   localStorage.setItem('data', formDataString);
 }
 
+fullName.addEventListener('input', store);
+emailData.addEventListener('input', store);
+messageData.addEventListener('input', store);
+
 const fillData = localStorage.getItem('data');
-
-const fillDataJson = JSON.parse(fillData);
-
-fullName.value = fillDataJson.name;
-emailData.value = fillDataJson.email;
-messageData.value = fillDataJson.message;
-
-console.log(fillDataJson);
+if (fillData != null){
+  const fillDataJson = JSON.parse(fillData);
+  fullName.value = fillDataJson.name;
+  emailData.value = fillDataJson.email;
+  messageData.value = fillDataJson.msg;
+}
