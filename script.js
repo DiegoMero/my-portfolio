@@ -342,11 +342,11 @@ const EMAIL_INVALID = 'Please enter a correct email address format';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  let nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  let emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  let emailLowercaseValid = checkUppercase(form.elements.email, lowerCaseCheck);
+  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
+  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  const emailLowercaseValid = checkUppercase(form.elements.email, lowerCaseCheck);
 
-  if(nameValid && emailValid && emailLowercaseValid){
+  if (nameValid && emailValid && emailLowercaseValid) {
     form.submit();
   }
 });
