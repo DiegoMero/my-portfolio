@@ -73,7 +73,7 @@ const projects = [
 ];
 
 const cardsContainer = document.querySelector('.works');
-for (let i = 0; i < projects.length; i += 1) {
+for (let i = 1; i < projects.length; i += 1) {
   const card = document.createElement('div');
   card.className = `card card${i}`;
 
@@ -154,9 +154,9 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 let buttons = document.querySelectorAll('.card button');
-buttons = [...buttons];
+buttons = [buttons];
 
-function displaymodal(e) {
+function displaymodal() {
   const element = e.srcElement.className.slice(-1);
 
   const backgroundStyles = document.createElement('body');
