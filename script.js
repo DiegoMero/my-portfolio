@@ -39,16 +39,16 @@ hamburger.addEventListener('click', displaymenu);
 
 const projects = [
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImg: 'images/SnapshootPortfolio.png',
+    name: 'Super Mario Run',
+    description: 'This webpage is to represent a race in the Mario world.',
+    featuredImg: 'images/screenshot1mobile.jpg',
     technologies: ['html', 'css', 'JavaScript'],
-    linkLive: '#',
+    linkLive: 'https://diegomero.github.io/Super-Mario-Run/',
     linkSource: '#',
   },
   {
     name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     featuredImg: 'images/SnapshootPortfolio2.png',
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: '#',
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     featuredImg: 'images/SnapshootPortfolio3.png',
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: '#',
@@ -64,7 +64,7 @@ const projects = [
   },
   {
     name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     featuredImg: 'images/SnapshootPortfolio4.png',
     technologies: ['html', 'css', 'JavaScript'],
     linkLive: '#',
@@ -113,7 +113,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const description = document.createElement('p');
   description.className = 'description';
-  description.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+  description.innerText = projects[i].description;
 
   const lenguajes = document.createElement('ul');
   lenguajes.className = 'lenguajes';

@@ -149,7 +149,7 @@ ul {
 }
 
 .snapshot-portfolio0 {
-  background: url(images/SnapshootPortfolio.png);
+  background: url(images/screenshot1mobile.jpg);
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -215,7 +215,7 @@ ul {
 
 .description {
   width: 295px;
-  height: 76px;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1113,7 +1113,7 @@ ul {
 
   .description {
     width: 496px;
-    height: 70px;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1130,11 +1130,9 @@ ul {
   }
 
   .snapshot-portfolio0 {
-    background: url(images/SnapshootPortfolioDesktop.png);
+    background: url(images/screenshot1.jpg);
     width: 544px;
     height: 448px;
-    left: 24px;
-    top: 24px;
   }
 
   .block0 {
@@ -1560,7 +1558,7 @@ ul {
   }
 
   .image-popup0 {
-    content: url(./images/SnapshootPortfolioDesktop.png);
+    content: url(./images/screenshot1.jpg);
     width: 100%;
     height: 280px;
   }
