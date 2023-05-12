@@ -452,7 +452,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .connect-container {
@@ -584,7 +584,6 @@ ul {
 }
 
 .languaje-text {
-  margin-left: 20px;
   height: 24px;
   left: 12px;
   right: 78px;
@@ -599,109 +598,39 @@ ul {
   color: #000;
 }
 
-.down-arrow {
-  width: 24px;
-  height: 24px;
-  margin-left: 145px;
+.languajes {
+  display: flex;
+  gap: 10px;
 }
 
-.javascript {
-  width: 303px;
-  height: 66.72px;
-  display: flex;
+.languajes li {
   background: #f7f7f9;
   border-radius: 8px;
-  align-items: center;
-}
-
-.javascript-icon {
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
-  margin-left: 20px;
-}
-
-.javascript-text {
-  margin-left: 15px;
-  height: 24px;
-  left: 76px;
-  right: 12px;
-  top: calc(50% - 24px / 2 - 0.36px);
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  height: 80px;
+  width: 80px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  color: #253858;
 }
 
-.html {
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: center;
-  display: flex;
+#ruby-logo {
+  max-width: 50%;
 }
 
-.html-icon {
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
-  margin-left: 20px;
+#react-logo {
+  max-width: 60%;
 }
 
-.html-text {
-  margin-left: 15px;
-  height: 24px;
-  left: 76px;
-  right: 12px;
-  top: calc(50% - 24px / 2 - 0.36px);
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
+#rails-logo {
+  max-width: 60%;
 }
 
-.css {
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: center;
-  display: flex;
+#redux-logo {
+  max-width: 60%;
 }
 
-.css-icon {
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  top: calc(50% - 48px / 2 - 0.36px);
-  margin-left: 20px;
-}
-
-.css-text {
-  margin-left: 15px;
-  height: 24px;
-  left: 76px;
-  right: 12px;
-  top: calc(50% - 24px / 2 - 0.36px);
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
+#postgres-logo {
+  max-width: 120%;
 }
 
 .frameworks-container {
@@ -712,7 +641,6 @@ ul {
 }
 
 .frameworks-text {
-  margin-left: 20px;
   height: 24px;
   left: 12px;
   right: 78px;
@@ -1205,18 +1133,6 @@ ul {
     top: 24px;
   }
 
-  .down-arrow {
-    margin-left: 400px;
-  }
-
-  .right-arrow {
-    margin-left: 400px;
-  }
-
-  .right-arrow2 {
-    margin-left: 475px;
-  }
-
   .skill-list {
     margin-right: 150px;
   }
@@ -1233,7 +1149,7 @@ ul {
     margin-left: 90px;
   }
 
-  .javascript {
+/*   .languaje {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1241,37 +1157,7 @@ ul {
     height: 120px;
     background: #f7f7f9;
     border-radius: 8px;
-  }
-
-  .html {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 122px;
-    height: 120px;
-    background: #f7f7f9;
-    border-radius: 8px;
-  }
-
-  .css {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 122px;
-    height: 120px;
-    background: #f7f7f9;
-    border-radius: 8px;
-  }
-
-  .languajes-skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 12px;
-    gap: 12px;
-    width: 414px;
-    height: 144px;
-  }
+  } */
 
   .about-me-container {
     display: flex;
