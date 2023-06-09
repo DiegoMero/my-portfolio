@@ -151,6 +151,7 @@ ul {
     border-top-right-radius: 80px 80px;
     margin-top: 80px;
     padding-top: 25%;
+    padding-bottom: 75%;
   }
 
   #about-me h2 {
@@ -218,10 +219,6 @@ ul {
     font-weight: 500;
     margin: 5%;
   }
-
-  #arrow {
-    transition: transform 0.5s;
-  }
   
   .rotate {
     transform: rotate(90deg);
@@ -251,6 +248,65 @@ ul {
     color: #253858;
     font-weight: 500;
     font-size: 15px;
+  }
+
+  #contact-me {
+    background-image: url("/images/contact-form-shapes-mobile1x.png");
+    background-size: auto;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #6070FF;
+    padding-top: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top-left-radius: 80px 80px;
+    margin-top: -25%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-me h2 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  #contact-me p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .form-container li input {
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    width: 240px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .form-container li textarea {
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    width: 240px;
+    height: 150px;
+  }
+
+  .form-container li button {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #6070FF;
+    padding: 5%;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 30px;
   }
 }
 
