@@ -3,6 +3,10 @@ body {
   background: rgba(247, 247, 249, 1);
 }
 
+ul {
+  list-style: none;
+}
+
 /* Estilos para pantallas pequeñas */
 
 @media (max-width: 767px) {
@@ -23,7 +27,7 @@ body {
   #home {
     background-color: rgba(255, 255, 255, 1);
     background-image: url("/images/header-shapes-mobile.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-left: 5%;
     padding-right: 5%;
@@ -60,7 +64,6 @@ body {
   #social {
     margin: 0;
     display: flex;
-    list-style: none;
     padding: 0;
     align-items: center;
     gap: 5%;
@@ -70,6 +73,78 @@ body {
   #social li {
     display: flex;
     justify-content: center;
+  }
+
+  #works {
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #works ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+  }
+
+  .project-card {
+    padding: 0;
+    background: #FFFFFF;
+    padding: 2.5%;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+  }
+
+  #works ul li img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  #works ul li h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #172B4D;
+    margin: 0;
+  }
+
+  #works ul li h3 {
+    margin: 0;
+    color: #344563;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  #works ul li ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  #works ul li ul li {
+    background: #EBEBFF;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #6070FF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  #works ul li button {
+    margin-top: 10px;
+    width: 126px;
+    height: 48px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    color: #396DF2;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    background: #FFFFFF;
   }
 }
 
