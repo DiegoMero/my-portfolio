@@ -252,7 +252,7 @@ ul {
 
   #contact-me {
     background-image: url("/images/contact-form-shapes-mobile1x.png");
-    background-size: auto;
+    background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
     background-color: #6070FF;
@@ -307,6 +307,50 @@ ul {
     font-weight: 500;
     font-size: 17px;
     margin-bottom: 30px;
+  }
+
+  .menu-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+  }
+
+  .menu-options {
+    backdrop-filter: blur(8px);
+    background-color: rgba(96, 112, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    gap: 15px;
+    height: 100%;
+    animation-name: slideInMenu;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes slideInMenu {
+    from {width: 0;}
+    to {width: 90%;}
+  }
+  
+
+  .menu-options img {
+    width: 14px;
+    height: 14px;
+    margin-left: auto;
+  }
+
+  .menu-options a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 44px;
+    font-size: 32px;
+    color: #FFFFFF;
   }
 }
 
