@@ -144,6 +144,11 @@ ul {
     background: #FFFFFF;
   }
 
+  #works ul li button:active {
+    color: #FFFFFF;
+    background: #2230D2;
+  }
+
   #about {
     background: #FFFFFF;
     padding-left: 5%;
@@ -199,6 +204,11 @@ ul {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+
+  #about-me button:active {
+    color: #FFFFFF;
+    background: #396DF2;
   }
 
   #skills span {
@@ -307,6 +317,11 @@ ul {
     font-weight: 500;
     font-size: 17px;
     margin-bottom: 30px;
+  }
+
+  .form-container li button:active {
+    background: #6070FF;
+    color:#FFFFFF;
   }
 
   .menu-container {
