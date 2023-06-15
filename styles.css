@@ -367,6 +367,99 @@ ul {
     font-size: 32px;
     color: #FFFFFF;
   }
+
+  .popup-card {
+    font-family: 'Poppins', sans-serif;
+    position: fixed; /* Stay in place */
+    top: 0;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5%;
+    width: 79%;
+  }
+
+  .popup-card div {
+    display: flex;
+    align-items: flex-start
+  }
+
+  .popup-card div img {
+    padding-top: 5%;
+  }
+
+  .popup-card div h2 {
+    color: #172B4D;
+    margin: 0;
+    font-size: 30px;
+  }
+  .project-card-pic-mobile {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .popup-card h3 {
+    color: #344563;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .popup-card ul {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .popup-card ul li {
+    background: #EBEBFF;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #6070FF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  .popup-card span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(235, 236, 240, 1);
+    margin-top: 10px;
+  }
+
+  .popup-card div button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    color: #396DF2;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #6070FF;
+    gap: 5px;
+    flex-basis: 49%;
+    justify-content: center;
+  }
+
+  .popup-card div button h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .buttons-container {
+    margin-top: 5%;
+    justify-content: space-between;
+  }
+
+  .popup-card div button:active {
+    color: #FFFFFF;
+    background: #396DF2;
+  }
 }
 
 /* Estilos para pantallas medianas y grandes */
