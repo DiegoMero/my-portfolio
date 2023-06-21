@@ -22,6 +22,10 @@ ul {
     background: rgba(255, 255, 255, 1);
   }
 
+  #navbar div {
+    display: none;
+  }
+
   #logo {
     width: 100px;
   }
@@ -465,5 +469,43 @@ ul {
 /* Estilos para pantallas medianas y grandes */
 
 @media (min-width: 768px) {
+  header {
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-left-radius: 80px 80px;
+    font-family: 'Poppins', sans-serif;
+  }
 
+  #navbar {
+    display: flex;
+    height: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #logo {
+    max-height: 100%;
+  }
+
+  #navbar div {
+    display: flex;
+    gap: 10px;
+  }
+
+
+  #navbar div h3 {
+    font-weight: 500;
+    color: #344563;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #about {
+    display: none;
+  }
 }
