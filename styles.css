@@ -471,19 +471,24 @@ ul {
 @media (min-width: 768px) {
   header {
     background-color: rgba(255, 255, 255, 1);
-    border-bottom-left-radius: 80px 80px;
+    border-bottom-left-radius: 200px 200px;
     font-family: 'Poppins', sans-serif;
   }
 
   #navbar {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     height: 50px;
+    width: auto;
     padding-left: 10%;
     padding-right: 10%;
     justify-content: space-between;
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: sticky;
+    top: 0;
   }
 
   #logo {
@@ -495,14 +500,55 @@ ul {
     gap: 10px;
   }
 
-
-  #navbar div h3 {
+  #navbar div a {
     font-weight: 500;
     color: #344563;
+    text-decoration: none;
   }
 
   #menu {
     display: none;
+  }
+
+  #home {
+    background-image: url("/images/header-background.png");
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #home h1 {
+    color: #172B4D;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+  }
+
+  #home p {
+    margin: 0;
+    color: #344563;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 20x;
+  }
+
+  #home h2 {
+    color: #7F8CFF;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  #social {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 1%;
   }
 
   #about {
