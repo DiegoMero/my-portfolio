@@ -624,10 +624,117 @@ ul {
     color: var(--primary-b-500, #396DF2);
     padding: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
   }
 
-
   #about {
-    display: none;
+    margin-top: 140px;
+    padding-top: 100px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 160px;
+  }
+
+  #about-me {
+    flex-basis: 50%;
+    padding: 2.5%;
+  }
+
+  #about-me h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    color: var(--theme-1-neutrals-1, #091E42);
+  }
+
+  #about-me p {
+    color: var(--neutrals-n-600, #344563);
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #about-me h3 {
+    color: var(--primary-b-300, #7F8CFF);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #about-me ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  #about-me button {
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-b-400, #6070FF);
+    background: #FFFFFF;
+    color: var(--primary-b-500, #396DF2);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  #skills {
+    flex-basis: 50%;
+    padding: 2.5%;
+  }
+
+  .skill-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .skill-title h3 {
+    color: var(--theme-1-neutrals-3, #344563);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #skills ul {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  #skills ul li {
+    border-radius: 8px;
+    background: var(--neutrals-n-10, #F7F7F9);
+    padding: 2.5%;
+    width: 102px;
+    height: 92px;
+  }
+
+  #skills ul li h4 {
+    margin: 0;
+    color: var(--neutrals-n-700, #253858);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  #skills ul img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #skills span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #DFE1E6;
   }
 }
