@@ -636,7 +636,7 @@ ul {
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 160px;
+    padding-bottom: 270px;
   }
 
   #about-me {
@@ -736,5 +736,66 @@ ul {
     width: 100%;
     height: 2px;
     background: #DFE1E6;
+  }
+
+  #contact-me {
+    background-image: url("/images/contact-form-background-shapes1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    background-color: rgba(96, 112, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 140px;
+    border-top-left-radius: 150px 150px;
+    padding-bottom: 100px;
+  }
+
+  #contact-me h2 {
+    color: var(--neutrals-n-0, #FFF);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  #contact-me p {
+    color: var(--primary-b-50, #EBEBFF);
+    font-size: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+  }
+
+  #contact-me form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  #contact-me form ul li input {
+    width: 447px;
+    height: 48px;
+    border-style: none;
+  }
+
+  #contact-me form ul li textarea {
+    width: 447px;
+    height: 140px;
+    border-style: none;
+  }
+
+  #contact-me form ul li button {
+    border-radius: 8px;
+    border: 1px solid var(--primary-b-400, #6070FF);
+    background: #FFFFFF;
+    color: var(--primary-b-500, #396DF2);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
   }
 }
