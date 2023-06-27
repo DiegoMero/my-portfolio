@@ -102,6 +102,10 @@ ul {
     border-radius: 8px;
   }
 
+  #desktop-size {
+    display: none;
+  }
+
   #works ul li h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
@@ -550,6 +554,78 @@ ul {
     align-items: center;
     gap: 1%;
   }
+
+  #works {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 150px;
+  }
+
+  #works-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 142px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #mobile-size {
+    display: none;
+  }
+
+  .project-card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid var(--neutrals-n-40, #DFE1E6);
+    border-radius: 24px;
+    padding: 15px;
+  }
+
+  .project-card img {
+    height: 448px;
+    width: 495px;
+    border-radius: 8px;
+  }
+
+  .project-card div {
+    padding: 10px;
+  }
+
+  .project-card div h2 {
+    color: var(--theme-1-neutrals-1, #091E42);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .project-card div h3 {
+    color: var(--neutrals-n-600, #344563);
+    font-size: 16px;  
+  }
+
+  .project-card ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;  
+  }
+
+  .project-card div ul li {
+    border-radius: 8px;
+    background: var(--primary-b-50, #EBEBFF);
+    color: var(--primary-b-400, #6070FF);
+    padding: 5px;
+  }
+
+  .project-card div button {
+    margin-top: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-b-400, #6070FF);
+    background: #FFFFFF;
+    color: var(--primary-b-500, #396DF2);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+
 
   #about {
     display: none;
