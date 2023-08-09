@@ -57,18 +57,36 @@ const projects = [
     description: 'This web page represents a run in the Mario Bros universe.',
     languajes: ['HTML', 'CSS', 'JavaScript'],
     desktopImage: 'images/super-mario-run.png',
-    mobileImage: 'images/super-mario-run-mobile.png',
+    mobileImage: 'images/super-mario-run-definitive.png',
     liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
     sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
   },
   {
-    name: 'blablabla',
-    description: 'bleblebleble',
-    languajes: ['React', 'Ruby'],
+    name: 'Bookstore',
+    description: 'A bookstore page where you can display books, add books, and remove books from your list.',
+    languajes: ['HTML', 'CSS', 'React'],
     desktopImage: 'images/super-mario-run.png',
-    mobileImage: 'images/super-mario-run-mobile.png',
-    liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
-    sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
+    mobileImage: 'images/bookstore-definitive.png',
+    liveLink: 'https://astonishing-youtiao-974e95.netlify.app/',
+    sourceLink: 'https://github.com/DiegoMero/bookstore',
+  },
+  {
+    name: 'Math Magicians',
+    description: 'An online calculator and a random math-quote generator, have fun with numbers!',
+    languajes: ['HTML', 'CSS', 'React'],
+    desktopImage: 'images/math-magicians.png',
+    mobileImage: 'images/math-magicians.png',
+    liveLink: 'https://jocular-praline-ec302e.netlify.app/',
+    sourceLink: 'https://github.com/DiegoMero/magic-maths',
+  },
+  {
+    name: 'Take My Money App',
+    description: 'This app allows you to register and log in to manage your finances, you can invest your money in the different categories available.',
+    languajes: ['HTML', 'CSS', 'Ruby on Rails'],
+    desktopImage: 'images/take-my-money-definitive.png',
+    mobileImage: 'images/take-my-money-definitive.png',
+    liveLink: 'https://take-my-money-app.onrender.com/',
+    sourceLink: 'https://github.com/DiegoMero/take-my-money-app',
   },
 ];
 
@@ -157,6 +175,42 @@ button1.addEventListener('click', () => {
     projects[0].mobileImage,
     projects[0].liveLink,
     projects[0].sourceLink,
+  );
+});
+
+const button2 = document.getElementById('project-button2');
+button2.addEventListener('click', () => {
+  displayProjectCard(
+    projects[1].name,
+    projects[1].description,
+    projects[1].languajes,
+    projects[1].mobileImage,
+    projects[1].liveLink,
+    projects[1].sourceLink,
+  );
+});
+
+const button3 = document.getElementById('project-button3');
+button3.addEventListener('click', () => {
+  displayProjectCard(
+    projects[2].name,
+    projects[2].description,
+    projects[2].languajes,
+    projects[2].mobileImage,
+    projects[2].liveLink,
+    projects[2].sourceLink,
+  );
+});
+
+const button4 = document.getElementById('project-button4');
+button4.addEventListener('click', () => {
+  displayProjectCard(
+    projects[3].name,
+    projects[3].description,
+    projects[3].languajes,
+    projects[3].mobileImage,
+    projects[3].liveLink,
+    projects[3].sourceLink,
   );
 });
 
