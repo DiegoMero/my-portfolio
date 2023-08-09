@@ -51,7 +51,28 @@ function displaymenu() {
 
 menuButton.addEventListener('click', displaymenu);
 
-function displayProjectCard() {
+const projects = [
+  {
+    name: 'Super Mario Run',
+    description: 'This web page represents a run in the Mario Bros universe.',
+    languajes: ['HTML', 'CSS', 'JavaScript'],
+    desktopImage: 'images/super-mario-run.png',
+    mobileImage: 'images/super-mario-run-mobile.png',
+    liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
+    sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
+  },
+  {
+    name: 'blablabla',
+    description: 'bleblebleble',
+    languajes: ['React', 'Ruby'],
+    desktopImage: 'images/super-mario-run.png',
+    mobileImage: 'images/super-mario-run-mobile.png',
+    liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
+    sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
+  },
+];
+
+function displayProjectCard(name, description, languajes, image, live, source) {
   const projectCard = document.createElement('div');
   projectCard.className = 'popup-card';
   body.appendChild(projectCard);
@@ -60,7 +81,7 @@ function displayProjectCard() {
   projectCard.appendChild(projectHeader);
 
   const projectTitle = document.createElement('h2');
-  projectTitle.textContent = 'Super Mario Run';
+  projectTitle.textContent = name;
   projectHeader.appendChild(projectTitle);
 
   const iconX = document.createElement('img');
@@ -72,28 +93,22 @@ function displayProjectCard() {
   projectHeader.appendChild(iconX);
 
   const projectPic = document.createElement('img');
-  projectPic.src = 'images/super-mario-run-mobile.png';
+  projectPic.src = image;
   projectPic.className = 'project-card-pic-mobile';
   projectCard.appendChild(projectPic);
 
   const projectDescription = document.createElement('h3');
-  projectDescription.textContent = 'This web page represents a run in the Mario Bros universe.';
+  projectDescription.textContent = description;
   projectCard.appendChild(projectDescription);
 
   const projectTools = document.createElement('ul');
   projectCard.appendChild(projectTools);
 
-  const projectTool1 = document.createElement('li');
-  projectTools.appendChild(projectTool1);
-  projectTool1.textContent = 'HTML';
-
-  const projectTool2 = document.createElement('li');
-  projectTools.appendChild(projectTool2);
-  projectTool2.textContent = 'CSS';
-
-  const projectTool3 = document.createElement('li');
-  projectTools.appendChild(projectTool3);
-  projectTool3.textContent = 'JavaScript';
+  languajes.forEach((languaje) => {
+    const projectTool = document.createElement('li');
+    projectTools.appendChild(projectTool);
+    projectTool.textContent = languaje;
+  });
 
   const span = document.createElement('span');
   projectCard.appendChild(span);
@@ -103,6 +118,9 @@ function displayProjectCard() {
   buttons.className = 'buttons-container';
 
   const seeProjectButton = document.createElement('button');
+  seeProjectButton.addEventListener('click', () => {
+    window.location.href = live;
+  });
   buttons.appendChild(seeProjectButton);
 
   const seeProjectText = document.createElement('h4');
@@ -114,6 +132,9 @@ function displayProjectCard() {
   seeProjectButton.appendChild(seeProjectIcon);
 
   const seeSourceButton = document.createElement('button');
+  seeSourceButton.addEventListener('click', () => {
+    window.location.href = source;
+  });
   buttons.appendChild(seeSourceButton);
 
   const seeSourceText = document.createElement('h4');
@@ -127,8 +148,17 @@ function displayProjectCard() {
   document.body.style.overflow = 'hidden';
 }
 
-const botones = document.querySelector('.project-button');
-botones.addEventListener('click', displayProjectCard);
+const button1 = document.getElementById('project-button1');
+button1.addEventListener('click', () => {
+  displayProjectCard(
+    projects[0].name,
+    projects[0].description,
+    projects[0].languajes,
+    projects[0].mobileImage,
+    projects[0].liveLink,
+    projects[0].sourceLink,
+  );
+});
 
 const titulos = document.querySelectorAll('.skill-title');
 
