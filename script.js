@@ -1,383 +1,256 @@
-const hamburger = document.querySelector('.menu');
+const menuButton = document.getElementById('menu');
 const body = document.querySelector('body');
 
 function displaymenu() {
   const menu = document.createElement('div');
-  menu.className = 'menu-attributes';
-  const iconX = document.createElement('img');
+  menu.className = 'menu-container';
 
+  const menuOptions = document.createElement('div');
+  menuOptions.className = 'menu-options';
+  menu.appendChild(menuOptions);
+
+  const iconX = document.createElement('img');
   iconX.src = './images/Iconx.png';
-  iconX.className = 'xicon';
-  iconX.addEventListener('click', () => { body.removeChild(menu); });
+  iconX.addEventListener('click', () => {
+    body.removeChild(menu);
+    document.body.style.overflow = 'auto';
+  });
 
   const portfolio = document.createElement('a');
-  portfolio.href = '#works-section';
+  portfolio.href = '#works';
   portfolio.textContent = 'Portfolio';
-  portfolio.className = 'menu-text-style';
-  portfolio.addEventListener('click', () => { body.removeChild(menu); });
+  portfolio.addEventListener('click', () => {
+    body.removeChild(menu);
+    document.body.style.overflow = 'auto';
+  });
 
   const aboutme = document.createElement('a');
-  aboutme.href = '#about-me-section';
+  aboutme.href = '#about';
   aboutme.textContent = 'About';
-  aboutme.className = 'menu-text-style';
-  aboutme.addEventListener('click', () => { body.removeChild(menu); });
+  aboutme.addEventListener('click', () => {
+    body.removeChild(menu);
+    document.body.style.overflow = 'auto';
+  });
 
   const contact = document.createElement('a');
-  contact.href = '#contact-me-section';
+  contact.href = '#contact-me';
   contact.textContent = 'Contact';
-  contact.className = 'menu-text-style';
-  contact.addEventListener('click', () => { body.removeChild(menu); });
+  contact.addEventListener('click', () => {
+    body.removeChild(menu);
+    document.body.style.overflow = 'auto';
+  });
 
-  menu.appendChild(iconX);
-  menu.appendChild(portfolio);
-  menu.appendChild(aboutme);
-  menu.appendChild(contact);
+  menuOptions.appendChild(iconX);
+  menuOptions.appendChild(portfolio);
+  menuOptions.appendChild(aboutme);
+  menuOptions.appendChild(contact);
   body.appendChild(menu);
+
+  document.body.style.overflow = 'hidden';
 }
 
-hamburger.addEventListener('click', displaymenu);
+menuButton.addEventListener('click', displaymenu);
 
 const projects = [
   {
     name: 'Super Mario Run',
-    description: 'This webpage is to represent a race in the Mario world.',
-    featuredImg: 'images/screenshot1mobile.jpg',
-    technologies: ['html', 'css', 'JavaScript'],
-    linkLive: 'https://diegomero.github.io/Super-Mario-Run/',
-    linkSource: '#',
+    description: 'This web page represents a run in the Mario Bros universe.',
+    languajes: ['HTML', 'CSS', 'JavaScript'],
+    desktopImage: 'images/super-mario-run-desktop.png',
+    mobileImage: 'images/super-mario-run-definitive.png',
+    liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
+    sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    featuredImg: 'images/SnapshootPortfolio2.png',
-    technologies: ['html', 'css', 'JavaScript'],
-    linkLive: '#',
-    linkSource: '#',
+    name: 'Bookstore',
+    description: 'A bookstore page where you can display books, add books, and remove books from your list.',
+    languajes: ['HTML', 'CSS', 'React'],
+    desktopImage: 'images/bookstore-desktop.png',
+    mobileImage: 'images/bookstore-definitive.png',
+    liveLink: 'https://astonishing-youtiao-974e95.netlify.app/',
+    sourceLink: 'https://github.com/DiegoMero/bookstore',
   },
   {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    featuredImg: 'images/SnapshootPortfolio3.png',
-    technologies: ['html', 'css', 'JavaScript'],
-    linkLive: '#',
-    linkSource: '#',
+    name: 'Math Magicians',
+    description: 'An online calculator and a random math-quote generator, have fun with numbers!',
+    languajes: ['HTML', 'CSS', 'React'],
+    desktopImage: 'images/math-magicians-desktop.png',
+    mobileImage: 'images/math-magicians.png',
+    liveLink: 'https://jocular-praline-ec302e.netlify.app/',
+    sourceLink: 'https://github.com/DiegoMero/magic-maths',
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    featuredImg: 'images/SnapshootPortfolio4.png',
-    technologies: ['html', 'css', 'JavaScript'],
-    linkLive: '#',
-    linkSource: '#',
+    name: 'Take My Money App',
+    description: 'This app allows you to register and log in to manage your finances, you can invest your money in the different categories available.',
+    languajes: ['HTML', 'CSS', 'Ruby on Rails'],
+    desktopImage: 'images/take-my-money-desktop.png',
+    mobileImage: 'images/take-my-money-definitive.png',
+    liveLink: 'https://take-my-money-app.onrender.com/',
+    sourceLink: 'https://github.com/DiegoMero/take-my-money-app',
   },
 ];
 
-const cardsContainer = document.querySelector('.works');
-for (let i = 0; i < projects.length; i += 1) {
-  const card = document.createElement('div');
-  card.className = `card card${i}`;
+function displayProjectCard(name, description, languajes, image, live, source) {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  body.appendChild(overlay);
 
-  const snapshootPortfolio = document.createElement('div');
-  snapshootPortfolio.className = `snapshot-portfolio${i}`;
+  const projectCard = document.createElement('div');
+  projectCard.className = 'popup-card';
+  body.appendChild(projectCard);
 
-  const block = document.createElement('div');
-  block.className = `block${i}`;
+  const projectHeader = document.createElement('div');
+  projectHeader.className = 'project-header';
+  projectCard.appendChild(projectHeader);
 
-  const projectTitle = document.createElement('div');
-  projectTitle.className = 'project-title';
+  const projectTitle = document.createElement('h2');
+  projectTitle.textContent = name;
+  projectHeader.appendChild(projectTitle);
 
-  const miniTitle = document.createElement('h2');
-  miniTitle.className = 'mini-title';
-  miniTitle.innerText = projects[i].name;
+  const iconX = document.createElement('img');
+  iconX.src = './images/IconXgrey.png';
+  iconX.className = 'exit';
+  iconX.addEventListener('click', () => {
+    body.removeChild(projectCard);
+    body.removeChild(overlay);
+    document.body.style.overflow = 'auto';
+  });
+  projectHeader.appendChild(iconX);
 
-  const frame = document.createElement('div');
-  frame.className = 'frame';
+  const projectPic = document.createElement('img');
+  projectPic.src = image;
+  projectPic.className = 'project-card-pic-mobile';
+  projectCard.appendChild(projectPic);
 
-  const canopy = document.createElement('h5');
-  canopy.className = 'canopy';
-  canopy.innerText = 'CANOPY';
+  const informationContainer = document.createElement('div');
+  informationContainer.className = 'information-container';
+  projectCard.appendChild(informationContainer);
 
-  const counter = document.createElement('img');
-  counter.src = 'images/Counter.png';
+  const projectDescription = document.createElement('h3');
+  projectDescription.textContent = description;
+  informationContainer.appendChild(projectDescription);
 
-  const backEndDev = document.createElement('h5');
-  backEndDev.className = 'back-end-dev';
-  backEndDev.innerText = 'Back End Dev';
+  const subInformationContainer = document.createElement('div');
+  informationContainer.appendChild(subInformationContainer);
 
-  const counter2 = document.createElement('img');
-  counter2.src = 'images/Counter.png';
+  const projectTools = document.createElement('ul');
+  subInformationContainer.appendChild(projectTools);
 
-  const year = document.createElement('h5');
-  year.className = 'year';
-  year.innerText = '2015';
+  languajes.forEach((languaje) => {
+    const projectTool = document.createElement('li');
+    projectTools.appendChild(projectTool);
+    projectTool.textContent = languaje;
+  });
 
-  const description = document.createElement('p');
-  description.className = 'description';
-  description.innerText = projects[i].description;
+  const span = document.createElement('span');
+  subInformationContainer.appendChild(span);
 
-  const lenguajes = document.createElement('ul');
-  lenguajes.className = 'lenguajes';
+  const buttons = document.createElement('div');
+  subInformationContainer.appendChild(buttons);
+  buttons.className = 'buttons-container';
 
-  const tag = document.createElement('li');
-  tag.className = 'tag';
+  const seeProjectButton = document.createElement('button');
+  seeProjectButton.addEventListener('click', () => {
+    window.location.href = live;
+  });
+  buttons.appendChild(seeProjectButton);
 
-  for (let j = 0; j < projects[i].technologies.length; j += 1) {
-    const technologiesItem = document.createElement('div');
-    technologiesItem.innerText = projects[i].technologies[j];
-    technologiesItem.className = `mini-container${j}`;
-    tag.appendChild(technologiesItem);
-  }
+  const seeProjectText = document.createElement('h4');
+  seeProjectText.textContent = 'See live';
+  seeProjectButton.appendChild(seeProjectText);
 
-  const buttonContainer = document.createElement('div');
-  buttonContainer.className = 'project-button-container';
+  const seeProjectIcon = document.createElement('i');
+  seeProjectIcon.className = 'fa-solid fa-paper-plane';
+  seeProjectButton.appendChild(seeProjectIcon);
 
-  const button = document.createElement('button');
-  button.innerText = 'See Project';
-  button.className = `action-button button${i}`;
+  const seeSourceButton = document.createElement('button');
+  seeSourceButton.addEventListener('click', () => {
+    window.location.href = source;
+  });
+  buttons.appendChild(seeSourceButton);
 
-  cardsContainer.appendChild(card);
-  card.appendChild(snapshootPortfolio);
-  card.appendChild(block);
-  block.appendChild(projectTitle);
-  projectTitle.appendChild(miniTitle);
-  projectTitle.appendChild(frame);
-  frame.appendChild(canopy);
-  frame.appendChild(counter);
-  frame.appendChild(backEndDev);
-  frame.appendChild(counter2);
-  frame.appendChild(year);
-  block.appendChild(description);
-  block.appendChild(lenguajes);
-  lenguajes.appendChild(tag);
-  block.appendChild(buttonContainer);
-  buttonContainer.appendChild(button);
+  const seeSourceText = document.createElement('h4');
+  seeSourceText.textContent = 'See source';
+  seeSourceButton.appendChild(seeSourceText);
+
+  const seeSourceIcon = document.createElement('i');
+  seeSourceIcon.className = 'fa-brands fa-github';
+  seeSourceButton.appendChild(seeSourceIcon);
+
+  document.body.style.overflow = 'hidden';
 }
 
-let buttons = document.querySelectorAll('.card button');
-buttons = [...buttons];
-
-function displaymodal(e) {
-  const element = e.srcElement.className.slice(-1);
-
-  const backgroundStyles = document.createElement('body');
-  backgroundStyles.className = 'background-style';
-  body.appendChild(backgroundStyles);
-
-  const popupBackground = document.createElement('div');
-  popupBackground.className = 'popup-background';
-  backgroundStyles.appendChild(popupBackground);
-
-  const primaryText = document.createElement('div');
-  primaryText.className = 'popup-primary-text';
-  popupBackground.appendChild(primaryText);
-
-  const popupFrame1 = document.createElement('div');
-  popupFrame1.className = 'popupFrame';
-  primaryText.appendChild(popupFrame1);
-
-  const title = document.createElement('h6');
-  title.className = 'popup-title';
-  title.innerText = projects[element].name;
-  popupFrame1.appendChild(title);
-
-  const xContainer = document.createElement('div');
-  xContainer.className = 'xContainer';
-  popupFrame1.appendChild(xContainer);
-
-  const xIcon2 = document.createElement('img');
-  xIcon2.className = 'xIcon2';
-  xIcon2.addEventListener('click', () => { body.removeChild(backgroundStyles); });
-  xIcon2.src = 'images/greyxicon.png';
-  xContainer.appendChild(xIcon2);
-
-  const popupFrame2 = document.createElement('div');
-  popupFrame2.className = 'frame';
-  primaryText.appendChild(popupFrame2);
-
-  const popupCanopy = document.createElement('div');
-  popupCanopy.className = 'canopy';
-  popupCanopy.innerText = 'CANOPY';
-  popupFrame2.appendChild(popupCanopy);
-
-  const popupCounter = document.createElement('img');
-  popupCounter.src = 'images/Counter.png';
-  popupFrame2.appendChild(popupCounter);
-
-  const popupBackEndDev = document.createElement('div');
-  popupBackEndDev.className = 'back-end-dev';
-  popupBackEndDev.innerText = 'Back End Dev';
-  popupFrame2.appendChild(popupBackEndDev);
-
-  const popupCounter2 = document.createElement('img');
-  popupCounter2.src = 'images/Counter.png';
-  popupFrame2.appendChild(popupCounter2);
-
-  const popupYear = document.createElement('div');
-  popupYear.className = 'year';
-  popupYear.innerText = '2015';
-  popupFrame2.appendChild(popupYear);
-
-  const popupSnapshootPortfolio = document.createElement('img');
-  popupSnapshootPortfolio.src = projects[element].featuredImg;
-  popupSnapshootPortfolio.className = `image-popup${element}`;
-  popupBackground.appendChild(popupSnapshootPortfolio);
-
-  const container = document.createElement('div');
-  container.className = 'popup-mini-container';
-  popupBackground.appendChild(container);
-
-  const popupDescription = document.createElement('p');
-  popupDescription.className = 'popup-description';
-  popupDescription.innerText = projects[element].description;
-  container.appendChild(popupDescription);
-
-  const leftBlock = document.createElement('div');
-  leftBlock.className = 'popup-left-block';
-  container.appendChild(leftBlock);
-
-  const popupTag = document.createElement('div');
-  popupTag.className = 'tag';
-  leftBlock.appendChild(popupTag);
-
-  for (let j = 0; j < projects[element].technologies.length; j += 1) {
-    const technologiesItem = document.createElement('div');
-    technologiesItem.innerText = projects[element].technologies[j];
-    technologiesItem.className = `mini-container${j}`;
-    popupTag.appendChild(technologiesItem);
-  }
-
-  const devider = document.createElement('img');
-  devider.src = 'images/Vector4.png';
-  leftBlock.appendChild(devider);
-
-  const popupButtons = document.createElement('div');
-  popupButtons.className = 'popup-buttons';
-  leftBlock.appendChild(popupButtons);
-
-  const popupSeeLiveButton = document.createElement('a');
-  popupSeeLiveButton.className = 'action-button popupbutton';
-  popupSeeLiveButton.innerText = 'See live';
-  popupSeeLiveButton.href = projects[element].linkLive;
-  popupButtons.appendChild(popupSeeLiveButton);
-
-  const seeLiveIcon = document.createElement('img');
-  seeLiveIcon.src = 'images/seeLiveIcon.png';
-  popupSeeLiveButton.appendChild(seeLiveIcon);
-
-  const popupSeeSourceButton = document.createElement('a');
-  popupSeeSourceButton.className = 'action-button popupbutton';
-  popupSeeSourceButton.innerText = 'See source';
-  popupSeeSourceButton.href = projects[element].linkSource;
-  popupButtons.appendChild(popupSeeSourceButton);
-
-  const githubIcon = document.createElement('img');
-  githubIcon.src = 'images/bluegithubicon.png';
-  popupSeeSourceButton.appendChild(githubIcon);
-
-  const popupScroll = document.querySelector('body');
-  popupScroll.className = 'popup-scroll';
-  xIcon2.addEventListener('click', () => { popupScroll.classList.remove('popup-scroll'); });
-}
-
-for (let i = 0; i < buttons.length; i += 1) {
-  buttons[i].addEventListener('click', displaymodal);
-}
-
-function showMessage(input, message, type) {
-  const msg = document.querySelector('small');
-  msg.innerText = message;
-  input.className = type ? 'success' : 'error';
-  return type;
-}
-
-function showError(input, message) {
-  return showMessage(input, message, false);
-}
-
-function showSuccess(input) {
-  return showMessage(input, '', true);
-}
-
-function hasValue(input, message) {
-  if (input.value.trim() === '') {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-
-function isUpper(str) {
-  return !/^[a-z]*$/.test(str) && /[A-Z]/.test(str);
-}
-
-function validateEmail(input, requiredMsg, invalidMsg) {
-  if (!hasValue(input, requiredMsg)) {
-    return false;
-  }
-
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  const email = input.value.trim();
-
-  if (!emailRegex.test(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
-
-function checkUppercase(input, invalidMsg) {
-  const email = input.value.trim();
-  if (isUpper(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
-
-const form = document.querySelector('form');
-
-const lowerCaseCheck = 'Email needs to be in lower case';
-const NAME_REQUIRED = 'Please enter your name';
-const EMAIL_REQUIRED = 'Please enter your email';
-const EMAIL_INVALID = 'Please enter a correct email address format';
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  const emailLowercaseValid = checkUppercase(form.elements.email, lowerCaseCheck);
-
-  if (nameValid && emailValid && emailLowercaseValid) {
-    form.submit();
-  }
+const button1 = document.getElementById('project-button1');
+button1.addEventListener('click', () => {
+  displayProjectCard(
+    projects[0].name,
+    projects[0].description,
+    projects[0].languajes,
+    projects[0].mobileImage,
+    projects[0].liveLink,
+    projects[0].sourceLink,
+  );
 });
 
-// storage-test
-const formData = {
-  name: '',
-  email: '',
-  msg: '',
-};
+const button2 = document.getElementById('project-button2');
+button2.addEventListener('click', () => {
+  displayProjectCard(
+    projects[1].name,
+    projects[1].description,
+    projects[1].languajes,
+    projects[1].mobileImage,
+    projects[1].liveLink,
+    projects[1].sourceLink,
+  );
+});
 
-const fullName = form.elements.name;
-const emailData = form.elements.email;
-const messageData = form.elements.message;
+const button3 = document.getElementById('project-button3');
+button3.addEventListener('click', () => {
+  displayProjectCard(
+    projects[2].name,
+    projects[2].description,
+    projects[2].languajes,
+    projects[2].mobileImage,
+    projects[2].liveLink,
+    projects[2].sourceLink,
+  );
+});
 
-function store() {
-  formData.name = fullName.value;
-  formData.email = emailData.value;
-  formData.msg = messageData.value;
-  const formDataString = JSON.stringify(formData);
-  localStorage.setItem('data', formDataString);
-}
+const button4 = document.getElementById('project-button4');
+button4.addEventListener('click', () => {
+  displayProjectCard(
+    projects[3].name,
+    projects[3].description,
+    projects[3].languajes,
+    projects[3].mobileImage,
+    projects[3].liveLink,
+    projects[3].sourceLink,
+  );
+});
 
-fullName.addEventListener('input', store);
-emailData.addEventListener('input', store);
-messageData.addEventListener('input', store);
+const getResumeButton = document.getElementById('getResume');
 
-const fillData = localStorage.getItem('data');
-if (fillData != null) {
-  const fillDataJson = JSON.parse(fillData);
-  fullName.value = fillDataJson.name;
-  emailData.value = fillDataJson.email;
-  messageData.value = fillDataJson.msg;
-}
+getResumeButton.addEventListener('click', () => {
+  window.location.href = 'https://docs.google.com/document/d/1BvqIKZXPrOPUfjuR9XWjTnrqB0PtwPpHi6hpA4rtlIQ/edit?usp=sharing';
+});
+
+const titulos = document.querySelectorAll('.skill-title');
+
+titulos.forEach((titulo) => {
+  const arrow = titulo.querySelector('.arrow');
+  titulo.addEventListener('click', function () {
+    const lista = this.nextElementSibling;
+
+    if (arrow.classList.contains('rotate')) {
+      arrow.classList.remove('rotate');
+    } else {
+      arrow.classList.add('rotate');
+    }
+
+    if (lista.classList.contains('hide')) {
+      lista.classList.remove('hide');
+    } else {
+      lista.classList.add('hide');
+    }
+  });
+});
