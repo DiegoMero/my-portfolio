@@ -56,7 +56,7 @@ const projects = [
     name: 'Super Mario Run',
     description: 'This web page represents a run in the Mario Bros universe.',
     languajes: ['HTML', 'CSS', 'JavaScript'],
-    desktopImage: 'images/super-mario-run.png',
+    desktopImage: 'images/super-mario-run-desktop.png',
     mobileImage: 'images/super-mario-run-definitive.png',
     liveLink: 'https://diegomero.github.io/Super-Mario-Run/',
     sourceLink: 'https://github.com/DiegoMero/Super-Mario-Run',
@@ -65,7 +65,7 @@ const projects = [
     name: 'Bookstore',
     description: 'A bookstore page where you can display books, add books, and remove books from your list.',
     languajes: ['HTML', 'CSS', 'React'],
-    desktopImage: 'images/super-mario-run.png',
+    desktopImage: 'images/bookstore-desktop.png',
     mobileImage: 'images/bookstore-definitive.png',
     liveLink: 'https://astonishing-youtiao-974e95.netlify.app/',
     sourceLink: 'https://github.com/DiegoMero/bookstore',
@@ -74,7 +74,7 @@ const projects = [
     name: 'Math Magicians',
     description: 'An online calculator and a random math-quote generator, have fun with numbers!',
     languajes: ['HTML', 'CSS', 'React'],
-    desktopImage: 'images/math-magicians.png',
+    desktopImage: 'images/math-magicians-desktop.png',
     mobileImage: 'images/math-magicians.png',
     liveLink: 'https://jocular-praline-ec302e.netlify.app/',
     sourceLink: 'https://github.com/DiegoMero/magic-maths',
@@ -83,7 +83,7 @@ const projects = [
     name: 'Take My Money App',
     description: 'This app allows you to register and log in to manage your finances, you can invest your money in the different categories available.',
     languajes: ['HTML', 'CSS', 'Ruby on Rails'],
-    desktopImage: 'images/take-my-money-definitive.png',
+    desktopImage: 'images/take-my-money-desktop.png',
     mobileImage: 'images/take-my-money-definitive.png',
     liveLink: 'https://take-my-money-app.onrender.com/',
     sourceLink: 'https://github.com/DiegoMero/take-my-money-app',
@@ -91,11 +91,16 @@ const projects = [
 ];
 
 function displayProjectCard(name, description, languajes, image, live, source) {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  body.appendChild(overlay);
+
   const projectCard = document.createElement('div');
   projectCard.className = 'popup-card';
   body.appendChild(projectCard);
 
   const projectHeader = document.createElement('div');
+  projectHeader.className = 'project-header';
   projectCard.appendChild(projectHeader);
 
   const projectTitle = document.createElement('h2');
@@ -104,8 +109,10 @@ function displayProjectCard(name, description, languajes, image, live, source) {
 
   const iconX = document.createElement('img');
   iconX.src = './images/IconXgrey.png';
+  iconX.className = 'exit';
   iconX.addEventListener('click', () => {
     body.removeChild(projectCard);
+    body.removeChild(overlay);
     document.body.style.overflow = 'auto';
   });
   projectHeader.appendChild(iconX);
@@ -115,12 +122,19 @@ function displayProjectCard(name, description, languajes, image, live, source) {
   projectPic.className = 'project-card-pic-mobile';
   projectCard.appendChild(projectPic);
 
+  const informationContainer = document.createElement('div');
+  informationContainer.className = 'information-container';
+  projectCard.appendChild(informationContainer);
+
   const projectDescription = document.createElement('h3');
   projectDescription.textContent = description;
-  projectCard.appendChild(projectDescription);
+  informationContainer.appendChild(projectDescription);
+
+  const subInformationContainer = document.createElement('div');
+  informationContainer.appendChild(subInformationContainer);
 
   const projectTools = document.createElement('ul');
-  projectCard.appendChild(projectTools);
+  subInformationContainer.appendChild(projectTools);
 
   languajes.forEach((languaje) => {
     const projectTool = document.createElement('li');
@@ -129,10 +143,10 @@ function displayProjectCard(name, description, languajes, image, live, source) {
   });
 
   const span = document.createElement('span');
-  projectCard.appendChild(span);
+  subInformationContainer.appendChild(span);
 
   const buttons = document.createElement('div');
-  projectCard.appendChild(buttons);
+  subInformationContainer.appendChild(buttons);
   buttons.className = 'buttons-container';
 
   const seeProjectButton = document.createElement('button');
@@ -212,6 +226,12 @@ button4.addEventListener('click', () => {
     projects[3].liveLink,
     projects[3].sourceLink,
   );
+});
+
+const getResumeButton = document.getElementById('getResume');
+
+getResumeButton.addEventListener('click', () => {
+  window.location.href = 'https://docs.google.com/document/d/1BvqIKZXPrOPUfjuR9XWjTnrqB0PtwPpHi6hpA4rtlIQ/edit?usp=sharing';
 });
 
 const titulos = document.querySelectorAll('.skill-title');

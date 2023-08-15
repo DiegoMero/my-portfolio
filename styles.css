@@ -376,9 +376,19 @@ ul {
     color: #FFFFFF;
   }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+
   .popup-card {
     font-family: 'Poppins', sans-serif;
-    position: fixed; /* Stay in place */
+    position: fixed;
     top: 0;
     background: #FFFFFF;
     border: 1px solid #DFE1E6;
@@ -389,6 +399,7 @@ ul {
     margin-bottom: 10%;
     padding: 5%;
     width: 79%;
+    z-index: 1001;
   }
 
   .popup-card div {
@@ -406,6 +417,7 @@ ul {
     margin: 0;
     font-size: 30px;
   }
+  
   .project-card-pic-mobile {
     max-width: 100%;
     border-radius: 8px;
@@ -634,6 +646,11 @@ ul {
     font-size: 17px;
   }
 
+  .project-card div button:hover {
+    color: #FFFFFF;
+    background: var(--theme-1-primary-colors-2, #6070FF); 
+  }
+
   #about {
     margin-top: 140px;
     padding-top: 100px;
@@ -684,6 +701,11 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
+  }
+
+  #about-me button:hover {
+    color: #FFFFFF;
+    background: var(--theme-1-primary-colors-2, #6070FF);
   }
 
   #skills {
@@ -803,5 +825,156 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
+  }
+
+  #contact-me form ul li button:hover {
+    color: #FFFFFF;
+    background: var(--theme-1-primary-colors-2, #6070FF);
+    border: 1px solid var(--primary-b-400, #FFFFFF);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+
+  .popup-card {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1001;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2; /* Para controlar el orden de apilamiento */
+    position: relative;
+    align-items: center;
+    padding: 1%;
+    background-color: #FFF;
+  }
+
+  .popup-card div h2 {
+    margin: 0;
+    color: rgba(9, 30, 66, 1);
+  }
+
+  .exit {
+    width: 15px;
+    height: 15px;
+  }
+
+  .project-card-pic-mobile {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    z-index: 1;
+    top: -135px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+  }
+
+  .information-container {
+    background-color: #FFF; 
+    margin-top: -260px;
+    display: flex;
+    z-index: 2;
+    position: relative;
+    padding: 1%;
+  }
+
+  .information-container h3 {
+    color: var(--neutrals-n-600, #344563);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    flex-basis: 75%;
+  }
+
+  .information-container div {
+    flex-basis: 25%;
+  }
+
+  .information-container div ul {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .information-container div ul li {
+    background: #EBEBFF;
+    border-radius: 8px;
+    color: #6070FF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  .information-container div ul li {
+    background: #EBEBFF;
+    border-radius: 8px;
+    color: #6070FF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  .information-container div span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(235, 236, 240, 1);
+    margin-top: 10px;
+  }
+
+  .buttons-container {
+    display: flex;
+    margin-top: 5%;
+    gap: 10px;
+  }
+
+  .buttons-container button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    align-items: center;
+    color: #396DF2;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #6070FF;
+    gap: 5px;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+  }
+
+  .buttons-container button h4 {
+    margin: 6.5%;
+  }
+
+  .buttons-container button:active {
+    color: #FFFFFF;
+    background: #396DF2;
+  }
+
+  .buttons-container button:hover {
+    color: #FFFFFF;
+    background: var(--theme-1-primary-colors-2, #6070FF);
   }
 }
