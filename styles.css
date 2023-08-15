@@ -9,6 +9,10 @@ ul {
   margin: 0;
 }
 
+.fa-brands {
+  color: #505f79;
+}
+
 /* Estilos para pantallas pequeñas */
 
 @media (max-width: 767px) {
@@ -43,7 +47,7 @@ ul {
 
   #home h1 {
     font-family: 'Poppins', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     font-weight: 700;
     font-size: 30px;
     margin: 0;
@@ -58,9 +62,15 @@ ul {
     font-size: 14px;
   }
 
+  .popup-card div h2 {
+    color: #172b4d;
+    margin: 0;
+    font-size: 30px;
+  }
+
   #home h2 {
     font-family: 'Poppins', sans-serif;
-    color: #7F8CFF;
+    color: #7f8cff;
     font-weight: 500;
     line-height: 24px;
     font-size: 16px;
@@ -82,6 +92,12 @@ ul {
     padding-right: 5%;
   }
 
+  .popup-card ul {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
   #works ul {
     padding: 0;
     display: flex;
@@ -90,11 +106,21 @@ ul {
   }
 
   .project-card {
-    padding: 0;
-    background: #FFFFFF;
+    background: #fff;
     padding: 2.5%;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
+  }
+
+  .menu-options img {
+    width: 14px;
+    height: 14px;
+    margin-left: auto;
+  }
+
+  .popup-card div img {
+    padding-top: 5%;
+    margin-left: auto;
   }
 
   #works ul li img {
@@ -102,15 +128,51 @@ ul {
     border-radius: 8px;
   }
 
-  #desktop-size {
+  .desktop-size {
     display: none;
+  }
+
+  #about-me h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  #contact-me h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
   }
 
   #works ul li h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
-    color: #172B4D;
+    color: #172b4d;
     margin: 0;
+  }
+
+  .skill-title h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 5%;
+  }
+
+  .popup-card h3 {
+    color: #344563;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  #about-me h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #7f8cff;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 
   #works ul li h3 {
@@ -121,6 +183,14 @@ ul {
     font-weight: 400;
   }
 
+  #about-me ul {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 5%;
+  }
+
   #works ul li ul {
     display: flex;
     flex-direction: row;
@@ -128,51 +198,119 @@ ul {
     margin-top: 10px;
   }
 
-  #works ul li ul li {
-    background: #EBEBFF;
+  .popup-card ul li {
+    background: #ebebff;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
-    color: #6070FF;
+    color: #6070ff;
     font-weight: 500;
     font-size: 13px;
     padding: 1.5%;
+  }
+
+  #skills ul li {
+    display: flex;
+    align-items: center;
+    background: #f7f7f9;
+    border-radius: 8px;
+    padding: 5px;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  #works ul li ul li {
+    background: #ebebff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
+  .form-container li button {
+    background: #fff;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #6070ff;
+    padding: 5%;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .popup-card div button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    color: #396df2;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #6070ff;
+    gap: 5px;
+    flex-basis: 49%;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .form-container li button:active {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .popup-card div button:active {
+    color: #fff;
+    background: #396df2;
+  }
+
+  #about-me button {
+    font-family: 'Poppins', sans-serif;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   #works ul li button {
     margin-top: 10px;
     width: 126px;
     height: 48px;
-    border: 1px solid #6070FF;
+    border: 1px solid #6070ff;
     border-radius: 8px;
-    color: #396DF2;
+    color: #396df2;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
-    background: #FFFFFF;
+    background: #fff;
+  }
+
+  #about-me button:active {
+    color: #fff;
+    background: #396df2;
   }
 
   #works ul li button:active {
-    color: #FFFFFF;
-    background: #2230D2;
+    color: #fff;
+    background: #2230d2;
   }
 
   #about {
-    background: #FFFFFF;
+    background: #fff;
     padding-left: 5%;
     padding-right: 5%;
     border-top-right-radius: 80px 80px;
     margin-top: 80px;
     padding-top: 25%;
     padding-bottom: 75%;
-  }
-
-  #about-me h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #172B4D;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0;
   }
 
   #about-me p {
@@ -184,46 +322,19 @@ ul {
     margin: 0;
   }
 
-  #about-me h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #7F8CFF;
-    font-weight: 500;
-    line-height: 24px;
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  #about-me ul {
-    margin: 0;
-    display: flex;
-    padding: 0;
-    align-items: center;
-    gap: 5%;
-  }
-
-  #about-me button {
-    font-family: 'Poppins', sans-serif;
-    color: #396DF2;
-    border: 1px solid #6070FF;
-    border-radius: 8px;
-    background: #FFFFFF;
-    font-weight: 500;
-    font-size: 17px;
-    padding: 10px;
+  .popup-card span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(235, 236, 240, 1);
     margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  #about-me button:active {
-    color: #FFFFFF;
-    background: #396DF2;
   }
 
   #skills span {
     display: block;
     width: 100%;
     height: 2px;
-    background: #DFE1E6;
+    background: #dfe1e6;
   }
 
   .skill-title {
@@ -232,12 +343,6 @@ ul {
     justify-content: space-between;
   }
 
-  .skill-title h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin: 5%;
-  }
-  
   .rotate {
     transform: rotate(90deg);
   }
@@ -246,19 +351,15 @@ ul {
     display: none;
   }
 
-  #skills ul li {
-    display: flex;
-    align-items: center;
-    background: #F7F7F9;
-    border-radius: 8px;
-    padding: 5px;
-    gap: 5px;
-    margin-bottom: 10px;
-  }
-
   #skills ul li img {
     max-width: 20%;
     max-height: 20%;
+  }
+
+  .popup-card div button h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
   }
 
   #skills ul li h4 {
@@ -273,7 +374,7 @@ ul {
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
-    background-color: #6070FF;
+    background-color: #6070ff;
     padding-top: 25%;
     padding-left: 5%;
     padding-right: 5%;
@@ -285,15 +386,8 @@ ul {
     align-items: center;
   }
 
-  #contact-me h2 {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0;
-  }
-
   #contact-me p {
-    color: #FFFFFF;
+    color: #fff;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
@@ -301,7 +395,7 @@ ul {
   }
 
   .form-container li input {
-    border: 1px solid #CFD8DC;
+    border: 1px solid #cfd8dc;
     border-radius: 8px;
     width: 240px;
     height: 40px;
@@ -309,35 +403,18 @@ ul {
   }
 
   .form-container li textarea {
-    border: 1px solid #CFD8DC;
+    border: 1px solid #cfd8dc;
     border-radius: 8px;
     width: 240px;
     height: 150px;
   }
 
-  .form-container li button {
-    background: #FFFFFF;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    color: #6070FF;
-    padding: 5%;
-    font-weight: 500;
-    font-size: 17px;
-    margin-bottom: 30px;
-  }
-
-  .form-container li button:active {
-    background: #6070FF;
-    color:#FFFFFF;
-  }
-
   .menu-container {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     overflow: hidden;
   }
 
@@ -354,17 +431,10 @@ ul {
     animation-name: slideInMenu;
     animation-duration: 0.3s;
   }
-  
-  @keyframes slideInMenu {
-    from {width: 0;}
-    to {width: 90%;}
-  }
-  
 
-  .menu-options img {
-    width: 14px;
-    height: 14px;
-    margin-left: auto;
+  @keyframes slideInMenu {
+    from { width: 0; }
+    to { width: 90%; }
   }
 
   .menu-options a {
@@ -373,7 +443,7 @@ ul {
     font-weight: 600;
     line-height: 44px;
     font-size: 32px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .overlay {
@@ -390,8 +460,8 @@ ul {
     font-family: 'Poppins', sans-serif;
     position: fixed;
     top: 0;
-    background: #FFFFFF;
-    border: 1px solid #DFE1E6;
+    background: #fff;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin-left: 5%;
     margin-right: 20%;
@@ -402,84 +472,20 @@ ul {
     z-index: 1001;
   }
 
-  .popup-card div {
+  .project-header {
     display: flex;
-    align-items: flex-start
+    align-items: flex-start;
   }
 
-  .popup-card div img {
-    padding-top: 5%;
-    margin-left: auto;
-  }
-
-  .popup-card div h2 {
-    color: #172B4D;
-    margin: 0;
-    font-size: 30px;
-  }
-  
   .project-card-pic-mobile {
     max-width: 100%;
     border-radius: 8px;
   }
 
-  .popup-card h3 {
-    color: #344563;
-    margin: 0;
-    font-size: 15px;
-  }
-
-  .popup-card ul {
-    display: flex;
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .popup-card ul li {
-    background: #EBEBFF;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    color: #6070FF;
-    font-weight: 500;
-    font-size: 13px;
-    padding: 1.5%;
-  }
-
-  .popup-card span {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(235, 236, 240, 1);
-    margin-top: 10px;
-  }
-
-  .popup-card div button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    color: #396DF2;
-    background: #FFFFFF;
-    border-radius: 8px;
-    border: 1px solid #6070FF;
-    gap: 5px;
-    flex-basis: 49%;
-    justify-content: center;
-  }
-
-  .popup-card div button h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-  }
-
   .buttons-container {
+    display: flex;
     margin-top: 5%;
     justify-content: space-between;
-  }
-
-  .popup-card div button:active {
-    color: #FFFFFF;
-    background: #396DF2;
   }
 }
 
@@ -512,6 +518,16 @@ ul {
     max-height: 100%;
   }
 
+  .project-card div {
+    padding: 10px;
+    flex: 1;
+    width: 50%;
+  }
+
+  .information-container div {
+    flex-basis: 25%;
+  }
+
   #navbar div {
     display: flex;
     gap: 10px;
@@ -539,7 +555,7 @@ ul {
   }
 
   #home h1 {
-    color: #172B4D;
+    color: #172b4d;
     font-weight: 700;
     font-size: 48px;
     margin: 0;
@@ -550,11 +566,23 @@ ul {
     color: #344563;
     font-weight: 400;
     line-height: 24px;
-    font-size: 20x;
+    font-size: 20px;
+  }
+
+  .project-card div h2 {
+    color: var(--theme-1-neutrals-1, #091e42);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .popup-card div h2 {
+    margin: 0;
+    color: rgba(9, 30, 66, 1);
   }
 
   #home h2 {
-    color: #7F8CFF;
+    color: #7f8cff;
     font-weight: 500;
     line-height: 24px;
     font-size: 16px;
@@ -582,14 +610,14 @@ ul {
     padding-right: 10%;
   }
 
-  #mobile-size {
+  .mobile-size {
     display: none;
   }
 
   .project-card {
     display: flex;
     background-color: rgba(255, 255, 255, 1);
-    border: 1px solid var(--neutrals-n-40, #DFE1E6);
+    border: 1px solid var(--neutrals-n-40, #dfe1e6);
     border-radius: 24px;
     padding: 15px;
     width: 100%;
@@ -597,58 +625,83 @@ ul {
 
   .project-card img {
     height: 448px;
-    width: 495px;
     border-radius: 8px;
     flex: 1;
     width: 50%;
   }
 
-  .project-card div {
-    padding: 10px;
-    flex: 1;
-    width: 50%;
+  .skill-title h3 {
+    color: var(--theme-1-neutrals-3, #344563);
+    font-size: 20px;
+    font-weight: 500;
   }
 
-  .project-card div h2 {
-    color: var(--theme-1-neutrals-1, #091E42);
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 0;
+  .information-container h3 {
+    color: var(--neutrals-n-600, #344563);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    flex-basis: 75%;
   }
 
   .project-card div h3 {
     color: var(--neutrals-n-600, #344563);
-    font-size: 16px;  
+    font-size: 16px;
   }
 
   .project-card ul {
     margin-top: 20px;
     display: flex;
-    gap: 10px;  
+    gap: 10px;
   }
 
   .project-card div ul li {
     border-radius: 8px;
-    background: var(--primary-b-50, #EBEBFF);
-    color: var(--primary-b-400, #6070FF);
+    background: var(--primary-b-50, #ebebff);
+    color: var(--primary-b-400, #6070ff);
     padding: 5px;
+  }
+
+  .buttons-container button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    align-items: center;
+    color: #396df2;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #6070ff;
+    gap: 5px;
+    justify-content: center;
+    display: flex;
+    width: 120px;
   }
 
   .project-card div button {
     margin-top: 40px;
     border-radius: 8px;
-    border: 1px solid var(--primary-b-400, #6070FF);
-    background: #FFFFFF;
-    color: var(--primary-b-500, #396DF2);
+    border: 1px solid var(--primary-b-400, #6070ff);
+    background: #fff;
+    color: var(--primary-b-500, #396df2);
     padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
   }
 
+  .buttons-container button:active {
+    color: #fff;
+    background: #396df2;
+  }
+
+  .buttons-container button:hover {
+    color: #fff;
+    background: var(--theme-1-primary-colors-2, #6070ff);
+  }
+
   .project-card div button:hover {
-    color: #FFFFFF;
-    background: var(--theme-1-primary-colors-2, #6070FF); 
+    color: #fff;
+    background: var(--theme-1-primary-colors-2, #6070ff);
   }
 
   #about {
@@ -671,7 +724,7 @@ ul {
     font-weight: 700;
     font-size: 40px;
     margin: 0;
-    color: var(--theme-1-neutrals-1, #091E42);
+    color: var(--theme-1-neutrals-1, #091e42);
   }
 
   #about-me p {
@@ -681,9 +734,16 @@ ul {
   }
 
   #about-me h3 {
-    color: var(--primary-b-300, #7F8CFF);
+    color: var(--primary-b-300, #7f8cff);
     font-size: 16px;
     font-weight: 500;
+  }
+
+  .information-container div ul {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
   }
 
   #about-me ul {
@@ -694,9 +754,20 @@ ul {
   #about-me button {
     margin-top: 25px;
     border-radius: 8px;
-    border: 1px solid var(--primary-b-400, #6070FF);
-    background: #FFFFFF;
-    color: var(--primary-b-500, #396DF2);
+    border: 1px solid var(--primary-b-400, #6070ff);
+    background: #fff;
+    color: var(--primary-b-500, #396df2);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  #contact-me form ul li button {
+    border-radius: 8px;
+    border: 1px solid var(--primary-b-400, #6070ff);
+    background: #fff;
+    color: var(--primary-b-500, #396df2);
     padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -704,8 +775,8 @@ ul {
   }
 
   #about-me button:hover {
-    color: #FFFFFF;
-    background: var(--theme-1-primary-colors-2, #6070FF);
+    color: #fff;
+    background: var(--theme-1-primary-colors-2, #6070ff);
   }
 
   #skills {
@@ -717,12 +788,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .skill-title h3 {
-    color: var(--theme-1-neutrals-3, #344563);
-    font-size: 20px;
-    font-weight: 500;
   }
 
   #skills ul {
@@ -739,12 +804,25 @@ ul {
     display: none !important;
   }
 
+  .information-container div ul li {
+    background: #ebebff;
+    border-radius: 8px;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 1.5%;
+  }
+
   #skills ul li {
     border-radius: 8px;
-    background: var(--neutrals-n-10, #F7F7F9);
+    background: var(--neutrals-n-10, #f7f7f9);
     padding: 2.5%;
     width: 102px;
     height: 92px;
+  }
+
+  .buttons-container button h4 {
+    margin: 6.5%;
   }
 
   #skills ul li h4 {
@@ -759,11 +837,19 @@ ul {
     height: 50px;
   }
 
+  .information-container div span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(235, 236, 240, 1);
+    margin-top: 10px;
+  }
+
   #skills span {
     display: block;
     width: 100%;
     height: 2px;
-    background: #DFE1E6;
+    background: #dfe1e6;
   }
 
   #contact-me {
@@ -783,14 +869,14 @@ ul {
   }
 
   #contact-me h2 {
-    color: var(--neutrals-n-0, #FFF);
+    color: var(--neutrals-n-0, #fff);
     font-size: 40px;
     font-weight: 700;
     margin: 0;
   }
 
   #contact-me p {
-    color: var(--primary-b-50, #EBEBFF);
+    color: var(--primary-b-50, #ebebff);
     font-size: 20px;
     padding-left: 25%;
     padding-right: 25%;
@@ -816,21 +902,10 @@ ul {
     border-style: none;
   }
 
-  #contact-me form ul li button {
-    border-radius: 8px;
-    border: 1px solid var(--primary-b-400, #6070FF);
-    background: #FFFFFF;
-    color: var(--primary-b-500, #396DF2);
-    padding: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-  }
-
   #contact-me form ul li button:hover {
-    color: #FFFFFF;
-    background: var(--theme-1-primary-colors-2, #6070FF);
-    border: 1px solid var(--primary-b-400, #FFFFFF);
+    color: #fff;
+    background: var(--theme-1-primary-colors-2, #6070ff);
+    border: 1px solid var(--primary-b-400, #fff);
   }
 
   .overlay {
@@ -847,7 +922,7 @@ ul {
     font-family: 'Poppins', sans-serif;
     position: fixed;
     top: 0;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 8px;
     width: 90%;
     margin-left: 5%;
@@ -865,12 +940,7 @@ ul {
     position: relative;
     align-items: center;
     padding: 1%;
-    background-color: #FFF;
-  }
-
-  .popup-card div h2 {
-    margin: 0;
-    color: rgba(9, 30, 66, 1);
+    background-color: #fff;
   }
 
   .exit {
@@ -890,7 +960,7 @@ ul {
   }
 
   .information-container {
-    background-color: #FFF; 
+    background-color: #fff;
     margin-top: -260px;
     display: flex;
     z-index: 2;
@@ -898,83 +968,9 @@ ul {
     padding: 1%;
   }
 
-  .information-container h3 {
-    color: var(--neutrals-n-600, #344563);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    flex-basis: 75%;
-  }
-
-  .information-container div {
-    flex-basis: 25%;
-  }
-
-  .information-container div ul {
-    margin-top: 10px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .information-container div ul li {
-    background: #EBEBFF;
-    border-radius: 8px;
-    color: #6070FF;
-    font-weight: 500;
-    font-size: 13px;
-    padding: 1.5%;
-  }
-
-  .information-container div ul li {
-    background: #EBEBFF;
-    border-radius: 8px;
-    color: #6070FF;
-    font-weight: 500;
-    font-size: 13px;
-    padding: 1.5%;
-  }
-
-  .information-container div span {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(235, 236, 240, 1);
-    margin-top: 10px;
-  }
-
   .buttons-container {
     display: flex;
     margin-top: 5%;
     gap: 10px;
-  }
-
-  .buttons-container button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    align-items: center;
-    color: #396DF2;
-    background: #FFFFFF;
-    border-radius: 8px;
-    border: 1px solid #6070FF;
-    gap: 5px;
-    justify-content: center;
-    display: flex;
-    width: 120px;
-  }
-
-  .buttons-container button h4 {
-    margin: 6.5%;
-  }
-
-  .buttons-container button:active {
-    color: #FFFFFF;
-    background: #396DF2;
-  }
-
-  .buttons-container button:hover {
-    color: #FFFFFF;
-    background: var(--theme-1-primary-colors-2, #6070FF);
   }
 }
