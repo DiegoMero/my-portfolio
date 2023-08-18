@@ -231,7 +231,7 @@ button4.addEventListener('click', () => {
 const getResumeButton = document.getElementById('getResume');
 
 getResumeButton.addEventListener('click', () => {
-  window.location.href = 'https://docs.google.com/document/d/1BvqIKZXPrOPUfjuR9XWjTnrqB0PtwPpHi6hpA4rtlIQ/edit?usp=sharing';
+  window.location.href = 'https://drive.google.com/file/d/1icwTQz61R_R8kssabmnshG9Ii0gH61-0/view?usp=sharing';
 });
 
 const titulos = document.querySelectorAll('.skill-title');
