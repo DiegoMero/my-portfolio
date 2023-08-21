@@ -83,8 +83,8 @@ const projects = [
     name: 'Take My Money App',
     description: 'This app allows you to register and log in to manage your finances, you can invest your money in the different categories available.',
     languajes: ['HTML', 'CSS', 'Ruby on Rails'],
-    desktopImage: 'images/take-my-money-desktop.png',
-    mobileImage: 'images/take-my-money-definitive.png',
+    desktopImage: 'images/take-my-money-app.png',
+    mobileImage: 'images/take-my-money-app.png',
     liveLink: 'https://take-my-money-app.onrender.com/',
     sourceLink: 'https://github.com/DiegoMero/take-my-money-app',
   },
@@ -231,7 +231,7 @@ button4.addEventListener('click', () => {
 const getResumeButton = document.getElementById('getResume');
 
 getResumeButton.addEventListener('click', () => {
-  window.location.href = 'https://docs.google.com/document/d/1BvqIKZXPrOPUfjuR9XWjTnrqB0PtwPpHi6hpA4rtlIQ/edit?usp=sharing';
+  window.location.href = 'https://drive.google.com/file/d/1icwTQz61R_R8kssabmnshG9Ii0gH61-0/view?usp=sharing';
 });
 
 const titulos = document.querySelectorAll('.skill-title');
