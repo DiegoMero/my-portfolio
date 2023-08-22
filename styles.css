@@ -628,6 +628,11 @@ ul {
     border-radius: 8px;
     flex: 1;
     width: 50%;
+    transition: transform .2s;
+  }
+
+  .project-card img:hover {
+    transform:scale(1.02);
   }
 
   .skill-title h3 {
@@ -752,7 +757,6 @@ ul {
   }
 
   #about-me button {
-    margin-top: 25px;
     border-radius: 8px;
     border: 1px solid var(--primary-b-400, #6070ff);
     background: #fff;
