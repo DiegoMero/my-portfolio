@@ -151,7 +151,8 @@ function displayProjectCard(name, description, languajes, image, live, source) {
 
   const seeProjectButton = document.createElement('button');
   seeProjectButton.addEventListener('click', () => {
-    window.location.href = live;
+    const url = live;
+    window.open(url, '_blank');
   });
   buttons.appendChild(seeProjectButton);
 
@@ -165,7 +166,8 @@ function displayProjectCard(name, description, languajes, image, live, source) {
 
   const seeSourceButton = document.createElement('button');
   seeSourceButton.addEventListener('click', () => {
-    window.location.href = source;
+    const url = source;
+    window.open(url, '_blank');
   });
   buttons.appendChild(seeSourceButton);
 
@@ -231,7 +233,8 @@ button4.addEventListener('click', () => {
 const getResumeButton = document.getElementById('getResume');
 
 getResumeButton.addEventListener('click', () => {
-  window.location.href = 'https://drive.google.com/file/d/1icwTQz61R_R8kssabmnshG9Ii0gH61-0/view?usp=sharing';
+  const url = 'https://drive.google.com/file/d/1icwTQz61R_R8kssabmnshG9Ii0gH61-0/view?usp=sharing';
+  window.open(url, '_blank');
 });
 
 const titulos = document.querySelectorAll('.skill-title');
