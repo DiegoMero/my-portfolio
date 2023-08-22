@@ -54,7 +54,7 @@ menuButton.addEventListener('click', displaymenu);
 const projects = [
   {
     name: 'Super Mario Run',
-    description: 'This web page represents a run in the Mario Bros universe.',
+    description: 'Run, jump and smash enemies as you race against the clock and against other participants, do you have what it takes to save the princess? Fortune and glory, kid.',
     languajes: ['HTML', 'CSS', 'JavaScript'],
     desktopImage: 'images/super-mario-run-desktop.png',
     mobileImage: 'images/super-mario-run-definitive.png',
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     name: 'Bookstore',
-    description: 'A bookstore page where you can display books, add books, and remove books from your list.',
+    description: 'An advanced book management solution designed for book lovers. Bookstore provides users with a virtual environment where they can intuitively catalogue, browse and manage their personal collection of books.',
     languajes: ['HTML', 'CSS', 'React'],
     desktopImage: 'images/bookstore-desktop.png',
     mobileImage: 'images/bookstore-definitive.png',
@@ -72,7 +72,7 @@ const projects = [
   },
   {
     name: 'Math Magicians',
-    description: 'An online calculator and a random math-quote generator, have fun with numbers!',
+    description: 'A platform that brings together a essential tools for math enthusiasts and those who want to explore the beauty of numbers. This app offers a functional calculator.',
     languajes: ['HTML', 'CSS', 'React'],
     desktopImage: 'images/math-magicians-desktop.png',
     mobileImage: 'images/math-magicians.png',
