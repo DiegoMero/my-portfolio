@@ -24,6 +24,8 @@ ul {
     padding-left: 5%;
     padding-right: 5%;
     background: rgba(255, 255, 255, 1);
+    position: sticky;
+    top: 0;
   }
 
   #navbar div {
@@ -410,12 +412,11 @@ ul {
   }
 
   .menu-container {
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: fixed;
     top: 0;
-    bottom: 0;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   .menu-options {
