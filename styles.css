@@ -224,7 +224,7 @@ ul {
     background: #ebebff;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
-    color: #396df2;
+    color: #4538FF;
     font-weight: 500;
     font-size: 13px;
     padding: 1.5%;
@@ -665,7 +665,7 @@ ul {
   .project-card div ul li {
     border-radius: 8px;
     background: var(--primary-b-50, #ebebff);
-    color: #396df2;
+    color: #4538FF;
     padding: 5px;
   }
 
@@ -812,7 +812,7 @@ ul {
   .information-container div ul li {
     background: #ebebff;
     border-radius: 8px;
-    color: #6070ff;
+    color: #4538FF;
     font-weight: 500;
     font-size: 13px;
     padding: 1.5%;
